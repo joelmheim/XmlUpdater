@@ -1,0 +1,1130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+	<horizons>
+		<item type="struct">
+			<id type="char">Horizon1</id>
+			<name type="char">Horizon1</name>
+			<order type="double">1</order>
+		</item>
+		<item type="struct">
+			<id type="char">Horizon2</id>
+			<name type="char">Horizon2</name>
+			<order type="double">5</order>
+		</item>
+		<item type="struct">
+			<id type="char">Horizon3</id>
+			<name type="char">Horizon3</name>
+			<order type="double">9</order>
+		</item>
+	</horizons>
+	<templates type="cell">
+		<item type="struct">
+			<id type="char">Template1</id>
+			<name type="char">Template1</name>
+		</item>
+		<item type="struct">
+			<id type="char">Template2</id>
+			<name type="char">Template2</name>
+		</item>
+		<item type="struct">
+			<id type="char">Template3</id>
+			<name type="char">Template3</name>
+		</item>
+	</templates>
+	<slots type="cell">
+		<item type="struct">
+			<id type="char">Slot1</id>
+			<name type="char"/>
+			<templateid type="char">Template1</templateid>
+			<northing type="double">9999.9999</northing>
+			<easting type="double">9999.9999</easting>
+			<tvdss type="double"/>
+			<waterdepth type="double">999.999</waterdepth>
+		</item>
+		<item type="struct">
+			<id type="char">Slot2</id>
+			<name type="char"/>
+			<templateid type="char">Template2</templateid>
+			<northing type="double">9999.9999</northing>
+			<easting type="double">421294.24412203487</easting>
+			<tvdss type="double"/>
+			<waterdepth type="double">350.999999998596</waterdepth>
+		</item>
+		<item type="struct">
+			<id type="char">Slot3</id>
+			<name type="char"/>
+			<templateid type="char">Template3</templateid>
+			<northing type="double">7249656.782363548</northing>
+			<easting type="double">420590.9356623026</easting>
+			<tvdss type="double"/>
+			<waterdepth type="double">331.999999998672</waterdepth>
+		</item>
+	</slots>
+	<wells>
+		<item type="struct" b2path="IntegrationModules/OWWELLMON_SJ2NORL_HEIDRUN/Projects/6507%2F7-10/PositionLog">
+			<id type="char">2</id>
+			<slotid type="char">Slot1</slotid>
+			<defsurveypath type="char">IntegrationModules/EDM-EXPLORATION_UTM_Zone_32/Projects/6507%2F7-10/10/DefinitiveSurvey</defsurveypath>
+			<owwelldatum type="double">24.0</owwelldatum>
+			<edmsurveydatum type="double">24.0</edmsurveydatum>
+			<name type="char">Well1</name>
+		</item>
+		<item type="struct" b2path="IntegrationModules/OWWELLMON_SJ2NORL_HEIDRUN/Projects/6507%2F7-2/PositionLog">
+			<id type="char">4</id>
+			<slotid type="char">Slot2</slotid>
+			<defsurveypath type="char">IntegrationModules/EDM-EXPLORATION_UTM_Zone_32/Projects/6507%2F7-2/2/DefinitiveSurvey</defsurveypath>
+			<owwelldatum type="double">25.0</owwelldatum>
+			<edmsurveydatum type="double">25.0</edmsurveydatum>
+			<name type="char">Well2</name>
+		</item>
+		<item type="struct" b2path="IntegrationModules/OWWELLMON_SJ2NORL_HEIDRUN/Projects/6507%2F7-5/PositionLog">
+			<id type="char">7</id>
+			<slotid type="char">Slot3</slotid>
+			<defsurveypath type="char">IntegrationModules/EDM-EXPLORATION_UTM_Zone_32/Projects/6507%2F7-5/5/DefinitiveSurvey</defsurveypath>
+			<owwelldatum type="double">25.0</owwelldatum>
+			<edmsurveydatum type="double">25.0</edmsurveydatum>
+			<name type="char">Well3</name>
+		</item>
+	</wells>
+	<horizonwellpicks>
+		<item type="struct" b2path="IntegrationModules/OWWELLMON_SJ2NORL_HEIDRUN/Projects/6507%2F7-10/ALL_PICKS:Horizon3 STAT 1">
+			<id type="char">2;Horizon3;STAT;1</id>
+			<wellid type="double">2</wellid>
+			<surfaceid type="char">Horizon3</surfaceid>
+			<md type="double">1866.0</md>
+			<type type="char">horizon</type>
+			<tvdssOW type="double">1841.7</tvdssOW>
+			<tvdss type="double">1841.6997</tvdss>
+			<tvdssPosLog type="double">1865.7</tvdssPosLog>
+			<tvd type="double">1865.6997</tvd>
+			<covariancenn type="double">6.419018</covariancenn>
+			<covarianceee type="double">6.4255095</covarianceee>
+			<covariancevv type="double">2.1326091</covariancevv>
+			<covariancene type="double">0.0143284565</covariancene>
+			<covariancenv type="double">-0.04707635</covariancenv>
+			<covarianceev type="double">0.04078857</covarianceev>
+			<inclination type="double">0.1349091</inclination>
+			<azimuth type="double">212.90727</azimuth>
+			<templateid type="char">Template1</templateid>
+			<slotid type="char">Slot1</slotid>
+			<defsurveyid type="char">SGt6h</defsurveyid>
+			<branchWellboreName type="char">10</branchWellboreName>
+			<surveysequenceno type="double">0</surveysequenceno>
+			<surfacename type="char">Horizon3</surfacename>
+			<interpreter type="char">STAT</interpreter>
+			<observationnumber type="double">1</observationnumber>
+			<easting type="double">422460.3497508244</easting>
+			<northing type="double">7253239.990298853</northing>
+			<createdby type="char">STAT</createdby>
+			<createddate type="char">2001-12-03 00:00:00</createddate>
+			<qualifier type="char"/>
+			<kind type="char"/>
+			<confidence type="char">G</confidence>
+			<updateddate type="char">2002-01-21 00:00:00</updateddate>
+			<remark type="char"/>
+			<surveysource type="char">EDM</surveysource>
+		</item>
+		<item type="struct" b2path="IntegrationModules/OWWELLMON_SJ2NORL_HEIDRUN/Projects/6507%2F7-10/ALL_PICKS:Horizon1 STAT 1">
+			<id type="char">2;Horizon1;STAT;1</id>
+			<wellid type="double">2</wellid>
+			<surfaceid type="char">Horizon1</surfaceid>
+			<md type="double">394.0</md>
+			<type type="char">horizon</type>
+			<tvdssOW type="double">369.94055</tvdssOW>
+			<tvdss type="double">369.93875</tvdss>
+			<tvdssPosLog type="double">393.93692</tvdssPosLog>
+			<tvd type="double">393.93875</tvd>
+			<covariancenn type="double">0.0015988832</covariancenn>
+			<covarianceee type="double">0.0014716579</covarianceee>
+			<covariancevv type="double">0.17198083</covariancevv>
+			<covariancene type="double">4.5472234E-11</covariancene>
+			<covariancenv type="double">0.005210503</covariancenv>
+			<covarianceev type="double">1.8623108E-9</covarianceev>
+			<inclination type="double">1.4859914</inclination>
+			<azimuth type="double">360.00003</azimuth>
+			<templateid type="char">Template1</templateid>
+			<slotid type="char">Slot1</slotid>
+			<defsurveyid type="char">SGt6h</defsurveyid>
+			<branchWellboreName type="char">10</branchWellboreName>
+			<surveysequenceno type="double">0</surveysequenceno>
+			<surfacename type="char">Horizon1</surfacename>
+			<interpreter type="char">STAT</interpreter>
+			<observationnumber type="double">1</observationnumber>
+			<easting type="double">422472.5728729692</easting>
+			<northing type="double">7253222.721445257</northing>
+			<createdby type="char">STAT</createdby>
+			<createddate type="char">2001-10-31 00:00:00</createddate>
+			<qualifier type="char"/>
+			<kind type="char"/>
+			<confidence type="char">E</confidence>
+			<updateddate type="char">2009-09-17 00:00:00</updateddate>
+			<remark type="char"/>
+			<surveysource type="char">EDM</surveysource>
+		</item>
+		<item type="struct" b2path="IntegrationModules/OWWELLMON_SJ2NORL_HEIDRUN/Projects/6507%2F7-2/ALL_PICKS:Horizon3 STAT 1">
+			<id type="char">4;Horizon3;STAT;1</id>
+			<wellid type="double">4</wellid>
+			<surfaceid type="char">Horizon3</surfaceid>
+			<md type="double">1791.2</md>
+			<type type="char">horizon</type>
+			<tvdssOW type="double">1765.8608</tvdssOW>
+			<tvdss type="double">1765.8608</tvdss>
+			<tvdssPosLog type="double">1790.8568</tvdssPosLog>
+			<tvd type="double">1790.861</tvd>
+			<covariancenn type="double">6.2176976</covariancenn>
+			<covarianceee type="double">6.3072886</covarianceee>
+			<covariancevv type="double">1.91724</covariancevv>
+			<covariancene type="double">0.0017784969</covariancene>
+			<covariancenv type="double">0.0616642</covariancenv>
+			<covarianceev type="double">-0.0025420345</covarianceev>
+			<inclination type="double">1.0905925</inclination>
+			<azimuth type="double">192.6311</azimuth>
+			<templateid type="char">Template2</templateid>
+			<slotid type="char">Slot2</slotid>
+			<defsurveyid type="char">Ig0yj</defsurveyid>
+			<branchWellboreName type="char">2</branchWellboreName>
+			<surveysequenceno type="double">0</surveysequenceno>
+			<surfacename type="char">Horizon3</surfacename>
+			<interpreter type="char">STAT</interpreter>
+			<observationnumber type="double">1</observationnumber>
+			<easting type="double">421295.6045436294</easting>
+			<northing type="double">7247195.241681104</northing>
+			<createdby type="char">STAT</createdby>
+			<createddate type="char">2001-12-03 00:00:00</createddate>
+			<qualifier type="char"/>
+			<kind type="char"/>
+			<confidence type="char">E</confidence>
+			<updateddate type="char">2002-01-21 00:00:00</updateddate>
+			<remark type="char"/>
+			<surveysource type="char">EDM</surveysource>
+		</item>
+		<item type="struct" b2path="IntegrationModules/OWWELLMON_SJ2NORL_HEIDRUN/Projects/6507%2F7-2/ALL_PICKS:Horizon2 STAT 1">
+			<id type="char">4;Horizon2;STAT;1</id>
+			<wellid type="double">4</wellid>
+			<surfaceid type="char">Horizon2</surfaceid>
+			<md type="double">1454.0</md>
+			<type type="char">horizon</type>
+			<tvdssOW type="double">1428.7172</tvdssOW>
+			<tvdss type="double">1428.7172</tvdss>
+			<tvdssPosLog type="double">1453.7151</tvdssPosLog>
+			<tvd type="double">1453.7172</tvd>
+			<covariancenn type="double">3.5735788</covariancenn>
+			<covarianceee type="double">3.6216218</covarianceee>
+			<covariancevv type="double">1.1605008</covariancevv>
+			<covariancene type="double">9.758036E-4</covariancene>
+			<covariancenv type="double">0.032074425</covariancenv>
+			<covarianceev type="double">-9.4549573E-4</covarianceev>
+			<inclination type="double">0.75</inclination>
+			<azimuth type="double">162.71564</azimuth>
+			<templateid type="char">Template2</templateid>
+			<slotid type="char">Slot2</slotid>
+			<defsurveyid type="char">Ig0yj</defsurveyid>
+			<branchWellboreName type="char">2</branchWellboreName>
+			<surveysequenceno type="double">0</surveysequenceno>
+			<surfacename type="char">Horizon2</surfacename>
+			<interpreter type="char">STAT</interpreter>
+			<observationnumber type="double">1</observationnumber>
+			<easting type="double">421295.5161180287</easting>
+			<northing type="double">7247201.240030616</northing>
+			<createdby type="char">STAT</createdby>
+			<createddate type="char">2001-10-30 00:00:00</createddate>
+			<qualifier type="char"/>
+			<kind type="char"/>
+			<confidence type="char">E</confidence>
+			<updateddate type="char">2002-01-21 00:00:00</updateddate>
+			<remark type="char"/>
+			<surveysource type="char">EDM</surveysource>
+		</item>
+		<item type="struct" b2path="IntegrationModules/OWWELLMON_SJ2NORL_HEIDRUN/Projects/6507%2F7-2/ALL_PICKS:Horizon1 STAT 1">
+			<id type="char">4;Horizon1;STAT;1</id>
+			<wellid type="double">4</wellid>
+			<surfaceid type="char">Horizon1</surfaceid>
+			<md type="double">376.0</md>
+			<type type="char">horizon</type>
+			<tvdssOW type="double">350.89636</tvdssOW>
+			<tvdss type="double">350.89636</tvdss>
+			<tvdssPosLog type="double">375.88947</tvdssPosLog>
+			<tvd type="double">375.89636</tvd>
+			<covariancenn type="double">0.0011313478</covariancenn>
+			<covarianceee type="double">9.14758E-4</covarianceee>
+			<covariancevv type="double">0.16875094</covariancevv>
+			<covariancene type="double">-1.1705099E-5</covariancene>
+			<covariancenv type="double">-0.0068221306</covariancenv>
+			<covarianceev type="double">3.5751957E-4</covarianceev>
+			<inclination type="double">2.1367805</inclination>
+			<azimuth type="double">192.17561</azimuth>
+			<templateid type="char">Template2</templateid>
+			<slotid type="char">Slot2</slotid>
+			<defsurveyid type="char">Ig0yj</defsurveyid>
+			<branchWellboreName type="char">2</branchWellboreName>
+			<surveysequenceno type="double">0</surveysequenceno>
+			<surfacename type="char">Horizon1</surfacename>
+			<interpreter type="char">STAT</interpreter>
+			<observationnumber type="double">1</observationnumber>
+			<easting type="double">421294.6441877891</easting>
+			<northing type="double">7247217.296894805</northing>
+			<createdby type="char">STAT</createdby>
+			<createddate type="char">2001-10-30 00:00:00</createddate>
+			<qualifier type="char"/>
+			<kind type="char"/>
+			<confidence type="char">E</confidence>
+			<updateddate type="char">2002-01-21 00:00:00</updateddate>
+			<remark type="char"/>
+			<surveysource type="char">EDM</surveysource>
+		</item>
+		<item type="struct" b2path="IntegrationModules/OWWELLMON_SJ2NORL_HEIDRUN/Projects/6507%2F7-5/ALL_PICKS:Horizon3 STAT 1">
+			<id type="char">7;Horizon3;STAT;1</id>
+			<wellid type="double">7</wellid>
+			<surfaceid type="char">Horizon3</surfaceid>
+			<md type="double">1859.2</md>
+			<type type="char">horizon</type>
+			<tvdssOW type="double">1833.3828</tvdssOW>
+			<tvdss type="double">1833.3827</tvdss>
+			<tvdssPosLog type="double">1858.3824</tvdssPosLog>
+			<tvd type="double">1858.3828</tvd>
+			<covariancenn type="double">7.904659</covariancenn>
+			<covarianceee type="double">8.1657095</covarianceee>
+			<covariancevv type="double">2.1169481</covariancevv>
+			<covariancene type="double">-0.32876933</covariancene>
+			<covariancenv type="double">-0.17279625</covariancenv>
+			<covarianceev type="double">-0.116740994</covarianceev>
+			<inclination type="double">0.33</inclination>
+			<azimuth type="double">206.3</azimuth>
+			<templateid type="char">Template3</templateid>
+			<slotid type="char">Slot3</slotid>
+			<defsurveyid type="char">tndOf</defsurveyid>
+			<branchWellboreName type="char">5</branchWellboreName>
+			<surveysequenceno type="double">1</surveysequenceno>
+			<surfacename type="char">Horizon3</surfacename>
+			<interpreter type="char">STAT</interpreter>
+			<observationnumber type="double">1</observationnumber>
+			<easting type="double">420609.8145050641</easting>
+			<northing type="double">7249694.782707835</northing>
+			<createdby type="char">STAT</createdby>
+			<createddate type="char">2001-12-03 00:00:00</createddate>
+			<qualifier type="char"/>
+			<kind type="char"/>
+			<confidence type="char">E</confidence>
+			<updateddate type="char">2002-01-21 00:00:00</updateddate>
+			<remark type="char"/>
+			<surveysource type="char">EDM</surveysource>
+		</item>
+		<item type="struct" b2path="IntegrationModules/OWWELLMON_SJ2NORL_HEIDRUN/Projects/6507%2F7-5/ALL_PICKS:Horizon2 STAT 1">
+			<id type="char">7;Horizon2;STAT;1</id>
+			<wellid type="double">7</wellid>
+			<surfaceid type="char">Horizon2</surfaceid>
+			<md type="double">1481.5002</md>
+			<type type="char">horizon</type>
+			<tvdssOW type="double">1455.6931</tvdssOW>
+			<tvdss type="double">1455.6931</tvdss>
+			<tvdssPosLog type="double">1480.692</tvdssPosLog>
+			<tvd type="double">1480.6931</tvd>
+			<covariancenn type="double">6.4410357</covariancenn>
+			<covarianceee type="double">6.7008758</covarianceee>
+			<covariancevv type="double">1.2192736</covariancevv>
+			<covariancene type="double">-0.3285931</covariancene>
+			<covariancenv type="double">-0.17054144</covariancenv>
+			<covarianceev type="double">-0.12153467</covarianceev>
+			<inclination type="double">0.6116358</inclination>
+			<azimuth type="double">313.96542</azimuth>
+			<templateid type="char">Template3</templateid>
+			<slotid type="char">Slot3</slotid>
+			<defsurveyid type="char">tndOf</defsurveyid>
+			<branchWellboreName type="char">5</branchWellboreName>
+			<surveysequenceno type="double">1</surveysequenceno>
+			<surfacename type="char">Horizon2</surfacename>
+			<interpreter type="char">STAT</interpreter>
+			<observationnumber type="double">1</observationnumber>
+			<easting type="double">420611.8726612016</easting>
+			<northing type="double">7249694.786918295</northing>
+			<createdby type="char">STAT</createdby>
+			<createddate type="char">2001-10-30 00:00:00</createddate>
+			<qualifier type="char"/>
+			<kind type="char"/>
+			<confidence type="char">E</confidence>
+			<updateddate type="char">2002-01-21 00:00:00</updateddate>
+			<remark type="char"/>
+			<surveysource type="char">EDM</surveysource>
+		</item>
+		<item type="struct" b2path="IntegrationModules/OWWELLMON_SJ2NORL_HEIDRUN/Projects/6507%2F7-5/ALL_PICKS:Horizon1 STAT 1">
+			<id type="char">7;Horizon1;STAT;1</id>
+			<wellid type="double">7</wellid>
+			<surfaceid type="char">Horizon1</surfaceid>
+			<md type="double">356.0</md>
+			<type type="char">horizon</type>
+			<tvdssOW type="double">330.94144</tvdssOW>
+			<tvdss type="double">330.94144</tvdss>
+			<tvdssPosLog type="double">355.9335</tvdssPosLog>
+			<tvd type="double">355.94144</tvd>
+			<covariancenn type="double">0.0010361805</covariancenn>
+			<covarianceee type="double">7.0305355E-4</covarianceee>
+			<covariancevv type="double">0.6633808</covariancevv>
+			<covariancene type="double">2.3965343E-4</covariancene>
+			<covariancenv type="double">0.018461086</covariancenv>
+			<covarianceev type="double">0.009651222</covarianceev>
+			<inclination type="double">1.7318919</inclination>
+			<azimuth type="double">40.1773</azimuth>
+			<templateid type="char">Template3</templateid>
+			<slotid type="char">Slot3</slotid>
+			<defsurveyid type="char">tndOf</defsurveyid>
+			<branchWellboreName type="char">5</branchWellboreName>
+			<surveysequenceno type="double">0</surveysequenceno>
+			<surfacename type="char">Horizon1</surfacename>
+			<interpreter type="char">STAT</interpreter>
+			<observationnumber type="double">1</observationnumber>
+			<easting type="double">420593.5262168838</easting>
+			<northing type="double">7249661.737637312</northing>
+			<createdby type="char">STAT</createdby>
+			<createddate type="char">2001-10-30 00:00:00</createddate>
+			<qualifier type="char"/>
+			<kind type="char"/>
+			<confidence type="char">E</confidence>
+			<updateddate type="char">2002-01-21 00:00:00</updateddate>
+			<remark type="char"/>
+			<surveysource type="char">EDM</surveysource>
+		</item>
+	</horizonwellpicks>
+	<horizonfiles type="cell">
+		<item type="struct" b2path="IntegrationModules/OWGRIDS_HEIDRUN/Projects/TIME/STRATA/0%3ANORDLAND GP. HD/5%3AKai Fm. HD/GRIDS/Horizon3 32768">
+			<id type="char">HF001</id>
+			<horizonid type="char">Horizon3</horizonid>
+			<horizongridid type="char">HG001</horizongridid>
+			<filename type="char">HorizonFile1.dat</filename>
+			<datadomain type="char">TIME</datadomain>
+			<datasource type="char">TEST1</datasource>
+			<geoname type="char">Horizon3</geoname>
+			<geotype type="char">SURFACE</geotype>
+			<mapdatasetname type="char">test1</mapdatasetname>
+			<unitdesc type="char">ms</unitdesc>
+			<createusername type="char">TEST1</createusername>
+			<createdate type="char">Fri Nov 06 13:04:55 CET 2009</createdate>
+			<updateusername type="char">Test1</updateusername>
+			<updatedate type="char">Fri Nov 06 13:04:55 CET 2009</updatedate>
+			<attribute type="char">Time</attribute>
+			<zmax type="double">1121.702880859375</zmax>
+			<zmin type="double">1079.703125</zmin>
+		</item>
+		<item type="struct" b2path="IntegrationModules/OWGRIDS_HEIDRUN/Projects/TIME/STRATA/0%3ANORDLAND GP. HD/5%3AKai Fm. HD/GRIDS/Horizon3 32777">
+			<id type="char">HF002</id>
+			<horizonid type="char">Horizon3</horizonid>
+			<horizongridid type="char">HG001</horizongridid>
+			<filename type="char">HorizonFile2.dat</filename>
+			<datadomain type="char">TIME</datadomain>
+			<datasource type="char">TEST1</datasource>
+			<geoname type="char">Horizon3</geoname>
+			<geotype type="char">SURFACE</geotype>
+			<mapdatasetname type="char">test1</mapdatasetname>
+			<unitdesc type="char">ms</unitdesc>
+			<createusername type="char">TEST1</createusername>
+			<createdate type="char">Fri Nov 06 13:22:06 CET 2009</createdate>
+			<updateusername type="char">TEST1</updateusername>
+			<updatedate type="char">Fri Nov 06 13:22:06 CET 2009</updatedate>
+			<attribute type="char">Time</attribute>
+			<zmax type="double">1784.188232421875</zmax>
+			<zmin type="double">1709.564453125</zmin>
+		</item>
+		<item type="struct" b2path="IntegrationModules/OWGRIDS_HEIDRUN/Projects/TIME/INTERPRETER/TEST1/Horizon1 32767">
+			<id type="char">HF003</id>
+			<horizonid type="char">Horizon1</horizonid>
+			<horizongridid type="char">HG001</horizongridid>
+			<filename type="char">HorizonFile3.dat</filename>
+			<datadomain type="char">TIME</datadomain>
+			<datasource type="char">TEST1</datasource>
+			<geoname type="char">Horizon1</geoname>
+			<geotype type="char">SURFACE</geotype>
+			<mapdatasetname type="char">test1</mapdatasetname>
+			<unitdesc type="char">ms</unitdesc>
+			<createusername type="char">TEST1</createusername>
+			<createdate type="char">Fri Nov 06 13:03:36 CET 2009</createdate>
+			<updateusername type="char">TEST1</updateusername>
+			<updatedate type="char">Fri Nov 06 13:03:36 CET 2009</updatedate>
+			<attribute type="char">Time</attribute>
+			<zmax type="double">467.26727294921875</zmax>
+			<zmin type="double">423.70721435546875</zmin>
+		</item>
+		<item type="struct" b2path="IntegrationModules/OWGRIDS_HEIDRUN/Projects/TIME/INTERPRETER/TEST1/Horizon1 32778">
+			<id type="char">HF004</id>
+			<horizonid type="char">Horizon1</horizonid>
+			<horizongridid type="char">HG001</horizongridid>
+			<filename type="char">HorizonFile4.dat</filename>
+			<datadomain type="char">TIME</datadomain>
+			<datasource type="char">TEST1</datasource>
+			<geoname type="char">Horizon1</geoname>
+			<geotype type="char">SURFACE</geotype>
+			<mapdatasetname type="char">test1</mapdatasetname>
+			<unitdesc type="char">ms</unitdesc>
+			<createusername type="char">TEST1</createusername>
+			<createdate type="char">Fri Nov 06 13:23:18 CET 2009</createdate>
+			<updateusername type="char">TEST1</updateusername>
+			<updatedate type="char">Fri Nov 06 13:23:18 CET 2009</updatedate>
+			<attribute type="char">Time</attribute>
+			<zmax type="double">467.26727294921875</zmax>
+			<zmin type="double">423.70721435546875</zmin>
+		</item>
+		<item type="struct" b2path="IntegrationModules/OWGRIDS_HEIDRUN/Projects/TIME/STRATA/0%3ANORDLAND GP. HD/5%3AKai Fm. HD/GRIDS/Horizon3 32791">
+			<id type="char">HF005</id>
+			<horizonid type="char">Horizon3</horizonid>
+			<horizongridid type="char">HG002</horizongridid>
+			<filename type="char">HorizonFile5.dat</filename>
+			<datadomain type="char">TIME</datadomain>
+			<datasource type="char">TEST1</datasource>
+			<geoname type="char">Horizon3</geoname>
+			<geotype type="char">SURFACE</geotype>
+			<mapdatasetname type="char">test1</mapdatasetname>
+			<unitdesc type="char">ms</unitdesc>
+			<createusername type="char">TEST1</createusername>
+			<createdate type="char">Mon Nov 09 11:44:36 CET 2009</createdate>
+			<updateusername type="char">TEST1</updateusername>
+			<updatedate type="char">Mon Nov 09 11:44:36 CET 2009</updatedate>
+			<attribute type="char">Time</attribute>
+			<zmax type="double">1784.80419921875</zmax>
+			<zmin type="double">1709.635498046875</zmin>
+		</item>
+		<item type="struct" b2path="IntegrationModules/OWGRIDS_HEIDRUN/Projects/TIME/INTERPRETER/TEST1/Horizon1 32792">
+			<id type="char">HF006</id>
+			<horizonid type="char">Horizon1</horizonid>
+			<horizongridid type="char">HG002</horizongridid>
+			<filename type="char">HorizonFile6.dat</filename>
+			<datadomain type="char">TIME</datadomain>
+			<datasource type="char">TEST1</datasource>
+			<geoname type="char">Horizon1</geoname>
+			<geotype type="char">SURFACE</geotype>
+			<mapdatasetname type="char">test1</mapdatasetname>
+			<unitdesc type="char">ms</unitdesc>
+			<createusername type="char">TEST1</createusername>
+			<createdate type="char">Mon Nov 09 11:45:18 CET 2009</createdate>
+			<updateusername type="char">TEST1</updateusername>
+			<updatedate type="char">Mon Nov 09 11:45:18 CET 2009</updatedate>
+			<attribute type="char">Time</attribute>
+			<zmax type="double">468.7244567871094</zmax>
+			<zmin type="double">428.6560363769531</zmin>
+		</item>
+		<item type="struct" b2path="IntegrationModules/OWGRIDS_HEIDRUN/Projects/TIME/STRATA/0%3ANORDLAND GP. HD/5%3AKai Fm. HD/GRIDS/Horizon3 32940">
+			<id type="char">HF007</id>
+			<horizonid type="char">Horizon3</horizonid>
+			<horizongridid type="char">HG003</horizongridid>
+			<filename type="char">HorizonFile7.dat</filename>
+			<datadomain type="char">TIME</datadomain>
+			<datasource type="char">TEST2</datasource>
+			<geoname type="char">Horizon3</geoname>
+			<geotype type="char">SURFACE</geotype>
+			<mapdatasetname type="char">test2</mapdatasetname>
+			<unitdesc type="char">ms</unitdesc>
+			<createusername type="char">TEST2</createusername>
+			<createdate type="char">Sun Nov 21 10:30:21 CET 2010</createdate>
+			<updateusername type="char">TEST2</updateusername>
+			<updatedate type="char">Sun Nov 21 10:30:21 CET 2010</updatedate>
+			<attribute type="char">Time</attribute>
+			<zmax type="double">1793.500244140625</zmax>
+			<zmin type="double">1588.1168212890625</zmin>
+		</item>
+		<item type="struct" b2path="IntegrationModules/OWGRIDS_HEIDRUN/Projects/TIME/STRATA/0%3ANORDLAND GP. HD/3%3ANaust Fm. HD/GRIDS/Horizon2 32941">
+			<id type="char">HF008</id>
+			<horizonid type="char">Horizon2</horizonid>
+			<horizongridid type="char">HG003</horizongridid>
+			<filename type="char">HorizonFile8.dat</filename>
+			<datadomain type="char">TIME</datadomain>
+			<datasource type="char">TEST2</datasource>
+			<geoname type="char">Horizon2</geoname>
+			<geotype type="char">SURFACE</geotype>
+			<mapdatasetname type="char">test2</mapdatasetname>
+			<unitdesc type="char">ms</unitdesc>
+			<createusername type="char">TEST2</createusername>
+			<createdate type="char">Sun Nov 21 10:46:10 CET 2010</createdate>
+			<updateusername type="char">TEST2</updateusername>
+			<updatedate type="char">Sun Nov 21 10:46:10 CET 2010</updatedate>
+			<attribute type="char">Time</attribute>
+			<zmax type="double">1458.7506103515625</zmax>
+			<zmin type="double">1405.431396484375</zmin>
+		</item>
+		<item type="struct" b2path="IntegrationModules/OWGRIDS_HEIDRUN/Projects/TIME/INTERPRETER/TEST2/Horizon1 32942">
+			<id type="char">HF009</id>
+			<horizonid type="char">Horizon1</horizonid>
+			<horizongridid type="char">HG003</horizongridid>
+			<filename type="char">HorizonFile9.dat</filename>
+			<datadomain type="char">TIME</datadomain>
+			<datasource type="char">TEST2</datasource>
+			<geoname type="char">Horizon1</geoname>
+			<geotype type="char">SURFACE</geotype>
+			<mapdatasetname type="char">test2</mapdatasetname>
+			<unitdesc type="char">ms</unitdesc>
+			<createusername type="char">TEST2</createusername>
+			<createdate type="char">Sun Nov 21 11:04:04 CET 2010</createdate>
+			<updateusername type="char">TEST2</updateusername>
+			<updatedate type="char">Sun Nov 21 11:04:04 CET 2010</updatedate>
+			<attribute type="char">Time</attribute>
+			<zmax type="double">475.15423583984375</zmax>
+			<zmin type="double">439.88616943359375</zmin>
+		</item>
+		<item type="struct" b2path="IntegrationModules/OWGRIDS_HEIDRUN/Projects/TIME/STRATA/0%3ANORDLAND GP. HD/3%3ANaust Fm. HD/GRIDS/Horizon2 32919">
+			<id type="char">HF010</id>
+			<horizonid type="char">Horizon2</horizonid>
+			<horizongridid type="char">HG004</horizongridid>
+			<filename type="char">HorizonFile10.dat</filename>
+			<datadomain type="char">TIME</datadomain>
+			<datasource type="char">TEST1</datasource>
+			<geoname type="char">Horizon2</geoname>
+			<geotype type="char">SURFACE</geotype>
+			<mapdatasetname type="char">test1</mapdatasetname>
+			<unitdesc type="char">ms</unitdesc>
+			<createusername type="char">TEST1</createusername>
+			<createdate type="char">Fri Aug 06 14:49:00 CEST 2010</createdate>
+			<updateusername type="char">TEST1</updateusername>
+			<updatedate type="char">Fri Aug 06 14:49:00 CEST 2010</updatedate>
+			<attribute type="char">Time</attribute>
+			<zmax type="double">1491.833251953125</zmax>
+			<zmin type="double">1405.4703369140625</zmin>
+		</item>
+		<item type="struct" b2path="IntegrationModules/OWGRIDS_HEIDRUN/Projects/TIME/INTERPRETER/TEST1/Horizon1 32920">
+			<id type="char">HF011</id>
+			<horizonid type="char">Horizon1</horizonid>
+			<horizongridid type="char">HG004</horizongridid>
+			<filename type="char">HorizonFile11.dat</filename>
+			<datadomain type="char">TIME</datadomain>
+			<datasource type="char">TEST1</datasource>
+			<geoname type="char">Horizon1</geoname>
+			<geotype type="char">SURFACE</geotype>
+			<mapdatasetname type="char">test1</mapdatasetname>
+			<unitdesc type="char">ms</unitdesc>
+			<createusername type="char">TEST1</createusername>
+			<createdate type="char">Fri Aug 06 14:49:55 CEST 2010</createdate>
+			<updateusername type="char">TEST1</updateusername>
+			<updatedate type="char">Fri Aug 06 14:49:55 CEST 2010</updatedate>
+			<attribute type="char">Time</attribute>
+			<zmax type="double">533.1627807617188</zmax>
+			<zmin type="double">426.96099853515625</zmin>
+		</item>
+		<item type="struct" b2path="IntegrationModules/OWGRIDS_HEIDRUN/Projects/TIME/STRATA/0%3ANORDLAND GP. HD/5%3AKai Fm. HD/GRIDS/Horizon3 32785">
+			<id type="char">HF012</id>
+			<horizonid type="char">Horizon3</horizonid>
+			<horizongridid type="char">HG005</horizongridid>
+			<filename type="char">HorizonFile12.dat</filename>
+			<datadomain type="char">TIME</datadomain>
+			<datasource type="char">TEST1</datasource>
+			<geoname type="char">Horizon3</geoname>
+			<geotype type="char">SURFACE</geotype>
+			<mapdatasetname type="char">test1</mapdatasetname>
+			<unitdesc type="char">ms</unitdesc>
+			<createusername type="char">TEST1</createusername>
+			<createdate type="char">Mon Nov 09 08:43:26 CET 2009</createdate>
+			<updateusername type="char">TEST1</updateusername>
+			<updatedate type="char">Mon Nov 09 08:43:26 CET 2009</updatedate>
+			<attribute type="char">Time</attribute>
+			<zmax type="double">1784.8302001953125</zmax>
+			<zmin type="double">1698.0770263671875</zmin>
+		</item>
+		<item type="struct" b2path="IntegrationModules/OWGRIDS_HEIDRUN/Projects/TIME/INTERPRETER/TEST1/Horizon1 32786">
+			<id type="char">HF013</id>
+			<horizonid type="char">Horizon1</horizonid>
+			<horizongridid type="char">HG005</horizongridid>
+			<filename type="char">HorizonFile13.dat</filename>
+			<datadomain type="char">TIME</datadomain>
+			<datasource type="char">TEST1</datasource>
+			<geoname type="char">Horizon1</geoname>
+			<geotype type="char">SURFACE</geotype>
+			<mapdatasetname type="char">test1</mapdatasetname>
+			<unitdesc type="char">ms</unitdesc>
+			<createusername type="char">TEST1</createusername>
+			<createdate type="char">Mon Nov 09 08:44:23 CET 2009</createdate>
+			<updateusername type="char">TEST1</updateusername>
+			<updatedate type="char">Mon Nov 09 08:44:23 CET 2009</updatedate>
+			<attribute type="char">Time</attribute>
+			<zmax type="double">467.09820556640625</zmax>
+			<zmin type="double">416.1171569824219</zmin>
+		</item>
+		<item type="struct" b2path="IntegrationModules/OWGRIDS_HEIDRUN/Projects/TIME/STRATA/0%3ANORDLAND GP. HD/5%3AKai Fm. HD/GRIDS/Horizon3 32797">
+			<id type="char">HF014</id>
+			<horizonid type="char">Horizon3</horizonid>
+			<horizongridid type="char">HG006</horizongridid>
+			<filename type="char">HorizonFile14.dat</filename>
+			<datadomain type="char">TIME</datadomain>
+			<datasource type="char">TEST1</datasource>
+			<geoname type="char">Horizon3</geoname>
+			<geotype type="char">SURFACE</geotype>
+			<mapdatasetname type="char">test1</mapdatasetname>
+			<unitdesc type="char">ms</unitdesc>
+			<createusername type="char">TEST1</createusername>
+			<createdate type="char">Mon Nov 09 14:25:29 CET 2009</createdate>
+			<updateusername type="char">TEST1</updateusername>
+			<updatedate type="char">Mon Nov 09 14:25:29 CET 2009</updatedate>
+			<attribute type="char">Time</attribute>
+			<zmax type="double">1783.336181640625</zmax>
+			<zmin type="double">1709.783203125</zmin>
+		</item>
+		<item type="struct" b2path="IntegrationModules/OWGRIDS_HEIDRUN/Projects/TIME/INTERPRETER/TEST1/Horizon1 32798">
+			<id type="char">HF015</id>
+			<horizonid type="char">Horizon1</horizonid>
+			<horizongridid type="char">HG006</horizongridid>
+			<filename type="char">HorizonFile15.dat</filename>
+			<datadomain type="char">TIME</datadomain>
+			<datasource type="char">TEST1</datasource>
+			<geoname type="char">Horizon1</geoname>
+			<geotype type="char">SURFACE</geotype>
+			<mapdatasetname type="char">test1</mapdatasetname>
+			<unitdesc type="char">ms</unitdesc>
+			<createusername type="char">TEST1</createusername>
+			<createdate type="char">Mon Nov 09 14:26:26 CET 2009</createdate>
+			<updateusername type="char">TEST1</updateusername>
+			<updatedate type="char">Mon Nov 09 14:26:26 CET 2009</updatedate>
+			<attribute type="char">Time</attribute>
+			<zmax type="double">469.7179870605469</zmax>
+			<zmin type="double">424.57354736328125</zmin>
+		</item>
+		<item type="struct" b2path="IntegrationModules/OWGRIDS_HEIDRUN/Projects/TIME/STRATA/0%3ANORDLAND GP. HD/5%3AKai Fm. HD/GRIDS/Horizon3 32862">
+			<id type="char">HF016</id>
+			<horizonid type="char">Horizon3</horizonid>
+			<horizongridid type="char">HG007</horizongridid>
+			<filename type="char">HorizonFile16.dat</filename>
+			<datadomain type="char">TIME</datadomain>
+			<datasource type="char">TEST2</datasource>
+			<geoname type="char">Horizon3</geoname>
+			<geotype type="char">SURFACE</geotype>
+			<mapdatasetname type="char">test2</mapdatasetname>
+			<unitdesc type="char">ms</unitdesc>
+			<createusername type="char">TEST2</createusername>
+			<createdate type="char">Tue Jan 26 13:00:29 CET 2010</createdate>
+			<updateusername type="char">TEST2</updateusername>
+			<updatedate type="char">Tue Jan 26 13:00:29 CET 2010</updatedate>
+			<attribute type="char">Time</attribute>
+			<zmax type="double">1806.383056640625</zmax>
+			<zmin type="double">1581.5322265625</zmin>
+		</item>
+		<item type="struct" b2path="IntegrationModules/OWGRIDS_HEIDRUN/Projects/TIME/STRATA/0%3ANORDLAND GP. HD/3%3ANaust Fm. HD/GRIDS/Horizon2 32863">
+			<id type="char">HF017</id>
+			<horizonid type="char">Horizon2</horizonid>
+			<horizongridid type="char">HG007</horizongridid>
+			<filename type="char">HorizonFile17.dat</filename>
+			<datadomain type="char">TIME</datadomain>
+			<datasource type="char">TEST2</datasource>
+			<geoname type="char">Horizon2</geoname>
+			<geotype type="char">SURFACE</geotype>
+			<mapdatasetname type="char">test2</mapdatasetname>
+			<unitdesc type="char">ms</unitdesc>
+			<createusername type="char">TEST2</createusername>
+			<createdate type="char">Tue Jan 26 13:01:26 CET 2010</createdate>
+			<updateusername type="char">TEST2</updateusername>
+			<updatedate type="char">Tue Jan 26 13:01:26 CET 2010</updatedate>
+			<attribute type="char">Time</attribute>
+			<zmax type="double">1480.0516357421875</zmax>
+			<zmin type="double">1405.4600830078125</zmin>
+		</item>
+		<item type="struct" b2path="IntegrationModules/OWGRIDS_HEIDRUN/Projects/TIME/INTERPRETER/TEST2/Horizon1 32861">
+			<id type="char">HF018</id>
+			<horizonid type="char">Horizon1</horizonid>
+			<horizongridid type="char">HG007</horizongridid>
+			<filename type="char">HorizonFile18.dat</filename>
+			<datadomain type="char">TIME</datadomain>
+			<datasource type="char">TEST2</datasource>
+			<geoname type="char">Horizon1</geoname>
+			<geotype type="char">SURFACE</geotype>
+			<mapdatasetname type="char">test2</mapdatasetname>
+			<unitdesc type="char">ms</unitdesc>
+			<createusername type="char">TEST2</createusername>
+			<createdate type="char">Tue Jan 26 12:59:17 CET 2010</createdate>
+			<updateusername type="char">TEST2</updateusername>
+			<updatedate type="char">Tue Jan 26 12:59:17 CET 2010</updatedate>
+			<attribute type="char">Time</attribute>
+			<zmax type="double">519.787353515625</zmax>
+			<zmin type="double">437.4794616699219</zmin>
+		</item>
+		<item type="struct" b2path="IntegrationModules/OWGRIDS_HEIDRUN/Projects/TIME/STRATA/0%3ANORDLAND GP. HD/3%3ANaust Fm. HD/GRIDS/Horizon2 32819">
+			<id type="char">HF019</id>
+			<horizonid type="char">Horizon2</horizonid>
+			<horizongridid type="char">HG008</horizongridid>
+			<filename type="char">HorizonFile19.dat</filename>
+			<datadomain type="char">TIME</datadomain>
+			<datasource type="char">TEST2</datasource>
+			<geoname type="char">Horizon2</geoname>
+			<geotype type="char">SURFACE</geotype>
+			<mapdatasetname type="char">test2</mapdatasetname>
+			<unitdesc type="char">ms</unitdesc>
+			<createusername type="char">TEST1</createusername>
+			<createdate type="char">Tue Dec 01 14:20:02 CET 2009</createdate>
+			<updateusername type="char">TEST1</updateusername>
+			<updatedate type="char">Tue Dec 01 14:20:02 CET 2009</updatedate>
+			<attribute type="char">Time</attribute>
+			<zmax type="double">1487.8443603515625</zmax>
+			<zmin type="double">1405.4921875</zmin>
+		</item>
+		<item type="struct" b2path="IntegrationModules/OWGRIDS_HEIDRUN/Projects/TIME/INTERPRETER/TEST2/Horizon1 32818">
+			<id type="char">HF020</id>
+			<horizonid type="char">Horizon1</horizonid>
+			<horizongridid type="char">HG008</horizongridid>
+			<filename type="char">HorizonFile20.dat</filename>
+			<datadomain type="char">TIME</datadomain>
+			<datasource type="char">TEST2</datasource>
+			<geoname type="char">Horizon1</geoname>
+			<geotype type="char">SURFACE</geotype>
+			<mapdatasetname type="char">test2</mapdatasetname>
+			<unitdesc type="char">ms</unitdesc>
+			<createusername type="char">TEST1</createusername>
+			<createdate type="char">Tue Dec 01 14:17:11 CET 2009</createdate>
+			<updateusername type="char">TEST1</updateusername>
+			<updatedate type="char">Tue Dec 01 14:17:11 CET 2009</updatedate>
+			<attribute type="char">Time</attribute>
+			<zmax type="double">531.39306640625</zmax>
+			<zmin type="double">437.57025146484375</zmin>
+		</item>
+		<item type="struct" b2path="IntegrationModules/OWGRIDS_HEIDRUN/Projects/TIME/STRATA/0%3ANORDLAND GP. HD/5%3AKai Fm. HD/GRIDS/Horizon3 32923">
+			<id type="char">HF021</id>
+			<horizonid type="char">Horizon3</horizonid>
+			<horizongridid type="char">HG009</horizongridid>
+			<filename type="char">HorizonFile21.dat</filename>
+			<datadomain type="char">TIME</datadomain>
+			<datasource type="char">TEST1</datasource>
+			<geoname type="char">Horizon3</geoname>
+			<geotype type="char">SURFACE</geotype>
+			<mapdatasetname type="char">test1</mapdatasetname>
+			<unitdesc type="char">ms</unitdesc>
+			<createusername type="char">TEST1</createusername>
+			<createdate type="char">Wed Aug 18 10:02:23 CEST 2010</createdate>
+			<updateusername type="char">TEST1</updateusername>
+			<updatedate type="char">Wed Aug 18 10:02:23 CEST 2010</updatedate>
+			<attribute type="char">Time</attribute>
+			<zmax type="double">1772.0093994140625</zmax>
+			<zmin type="double">1707.65380859375</zmin>
+		</item>
+		<item type="struct" b2path="IntegrationModules/OWGRIDS_HEIDRUN/Projects/TIME/STRATA/0%3ANORDLAND GP. HD/3%3ANaust Fm. HD/GRIDS/Horizon2 32922">
+			<id type="char">HF022</id>
+			<horizonid type="char">Horizon2</horizonid>
+			<horizongridid type="char">HG009</horizongridid>
+			<filename type="char">HorizonFile22.dat</filename>
+			<datadomain type="char">TIME</datadomain>
+			<datasource type="char">TEST1</datasource>
+			<geoname type="char">Horizon2</geoname>
+			<geotype type="char">SURFACE</geotype>
+			<mapdatasetname type="char">test1</mapdatasetname>
+			<unitdesc type="char">ms</unitdesc>
+			<createusername type="char">TEST1</createusername>
+			<createdate type="char">Wed Aug 18 10:00:19 CEST 2010</createdate>
+			<updateusername type="char">TEST1</updateusername>
+			<updatedate type="char">Wed Aug 18 10:00:19 CEST 2010</updatedate>
+			<attribute type="char">Time</attribute>
+			<zmax type="double">1449.69970703125</zmax>
+			<zmin type="double">1415.09814453125</zmin>
+		</item>
+		<item type="struct" b2path="IntegrationModules/OWGRIDS_HEIDRUN/Projects/TIME/INTERPRETER/TEST1/Horizon1 32921">
+			<id type="char">HF023</id>
+			<horizonid type="char">Horizon1</horizonid>
+			<horizongridid type="char">HG009</horizongridid>
+			<filename type="char">HorizonFile23.dat</filename>
+			<datadomain type="char">TIME</datadomain>
+			<datasource type="char">TEST1</datasource>
+			<geoname type="char">Horizon1</geoname>
+			<geotype type="char">SURFACE</geotype>
+			<mapdatasetname type="char">test1</mapdatasetname>
+			<unitdesc type="char">ms</unitdesc>
+			<createusername type="char">TEST1</createusername>
+			<createdate type="char">Wed Aug 18 09:57:30 CEST 2010</createdate>
+			<updateusername type="char">TEST1</updateusername>
+			<updatedate type="char">Wed Aug 18 09:57:30 CEST 2010</updatedate>
+			<attribute type="char">Time</attribute>
+			<zmax type="double">468.3182373046875</zmax>
+			<zmin type="double">440.3687744140625</zmin>
+		</item>
+		<item type="struct" b2path="IntegrationModules/OWGRIDS_HEIDRUN/Projects/TIME/STRATA/0%3ANORDLAND GP. HD/5%3AKai Fm. HD/GRIDS/Horizon3 32895">
+			<id type="char">HF024</id>
+			<horizonid type="char">Horizon3</horizonid>
+			<horizongridid type="char">HG010</horizongridid>
+			<filename type="char">HorizonFile24.dat</filename>
+			<datadomain type="char">TIME</datadomain>
+			<datasource type="char">TEST1</datasource>
+			<geoname type="char">Horizon3</geoname>
+			<geotype type="char">SURFACE</geotype>
+			<mapdatasetname type="char">test1</mapdatasetname>
+			<unitdesc type="char">ms</unitdesc>
+			<createusername type="char">TEST1</createusername>
+			<createdate type="char">Tue Apr 27 12:49:36 CEST 2010</createdate>
+			<updateusername type="char">TEST1</updateusername>
+			<updatedate type="char">Tue Apr 27 12:49:36 CEST 2010</updatedate>
+			<attribute type="char">Time</attribute>
+			<zmax type="double">1839.224609375</zmax>
+			<zmin type="double">1581.2020263671875</zmin>
+		</item>
+		<item type="struct" b2path="IntegrationModules/OWGRIDS_HEIDRUN/Projects/TIME/STRATA/0%3ANORDLAND GP. HD/3%3ANaust Fm. HD/GRIDS/Horizon2 32888">
+			<id type="char">HF025</id>
+			<horizonid type="char">Horizon2</horizonid>
+			<horizongridid type="char">HG010</horizongridid>
+			<filename type="char">HorizonFile25.dat</filename>
+			<datadomain type="char">TIME</datadomain>
+			<datasource type="char">TEST1</datasource>
+			<geoname type="char">Horizon2</geoname>
+			<geotype type="char">SURFACE</geotype>
+			<mapdatasetname type="char">test1</mapdatasetname>
+			<unitdesc type="char">ms</unitdesc>
+			<createusername type="char">TEST1</createusername>
+			<createdate type="char">Mon Apr 26 15:08:23 CEST 2010</createdate>
+			<updateusername type="char">TEST1</updateusername>
+			<updatedate type="char">Tue Apr 27 12:48:43 CEST 2010</updatedate>
+			<attribute type="char">Time</attribute>
+			<zmax type="double">1500.1005859375</zmax>
+			<zmin type="double">1405.4866943359375</zmin>
+		</item>
+		<item type="struct" b2path="IntegrationModules/OWGRIDS_HEIDRUN/Projects/TIME/INTERPRETER/TEST1/Horizon1 32887">
+			<id type="char">HF026</id>
+			<horizonid type="char">Horizon1</horizonid>
+			<horizongridid type="char">HG010</horizongridid>
+			<filename type="char">HorizonFile26.dat</filename>
+			<datadomain type="char">TIME</datadomain>
+			<datasource type="char">TEST1</datasource>
+			<geoname type="char">Horizon1</geoname>
+			<geotype type="char">SURFACE</geotype>
+			<mapdatasetname type="char">test1</mapdatasetname>
+			<unitdesc type="char">ms</unitdesc>
+			<createusername type="char">TEST1</createusername>
+			<createdate type="char">Mon Apr 26 15:06:35 CEST 2010</createdate>
+			<updateusername type="char">TEST1</updateusername>
+			<updatedate type="char">Tue Apr 27 12:47:51 CEST 2010</updatedate>
+			<attribute type="char">Time</attribute>
+			<zmax type="double">543.9070434570312</zmax>
+			<zmin type="double">426.95989990234375</zmin>
+		</item>
+		<item type="struct" b2path="IntegrationModules/OWGRIDS_HEIDRUN/Projects/TIME/STRATA/0%3ANORDLAND GP. HD/5%3AKai Fm. HD/GRIDS/Horizon3 32678">
+			<id type="char">HF027</id>
+			<horizonid type="char">Horizon3</horizonid>
+			<horizongridid type="char">HG011</horizongridid>
+			<filename type="char">HorizonFile27.dat</filename>
+			<datadomain type="char">TIME</datadomain>
+			<datasource type="char">TEST3</datasource>
+			<geoname type="char">Horizon3</geoname>
+			<geotype type="char">SURFACE</geotype>
+			<mapdatasetname type="char">test1</mapdatasetname>
+			<unitdesc type="char">ms</unitdesc>
+			<createusername type="char">TEST3</createusername>
+			<createdate type="char">Thu Jun 25 13:33:22 CEST 2009</createdate>
+			<updateusername type="char">TEST3</updateusername>
+			<updatedate type="char">Thu Jun 25 13:33:22 CEST 2009</updatedate>
+			<attribute type="char">Z-VALUE</attribute>
+			<zmax type="double">1845.9395751953125</zmax>
+			<zmin type="double">1456.677001953125</zmin>
+		</item>
+		<item type="struct" b2path="IntegrationModules/OWGRIDS_HEIDRUN/Projects/TIME/STRATA/0%3ANORDLAND GP. HD/3%3ANaust Fm. HD/GRIDS/Horizon2 32677">
+			<id type="char">HF028</id>
+			<horizonid type="char">Horizon2</horizonid>
+			<horizongridid type="char">HG011</horizongridid>
+			<filename type="char">HorizonFile28.dat</filename>
+			<datadomain type="char">TIME</datadomain>
+			<datasource type="char">TEST3</datasource>
+			<geoname type="char">Horizon2</geoname>
+			<geotype type="char">SURFACE</geotype>
+			<mapdatasetname type="char">test1</mapdatasetname>
+			<unitdesc type="char">ms</unitdesc>
+			<createusername type="char">TEST3</createusername>
+			<createdate type="char">Thu Jun 25 13:32:44 CEST 2009</createdate>
+			<updateusername type="char">TEST3</updateusername>
+			<updatedate type="char">Thu Jun 25 13:32:44 CEST 2009</updatedate>
+			<attribute type="char">Z-VALUE</attribute>
+			<zmax type="double">1499.634521484375</zmax>
+			<zmin type="double">1295.7252197265625</zmin>
+		</item>
+		<item type="struct" b2path="IntegrationModules/OWGRIDS_HEIDRUN/Projects/TIME/INTERPRETER/TEST3/Horizon1 32674">
+			<id type="char">HF029</id>
+			<horizonid type="char">Horizon1</horizonid>
+			<horizongridid type="char">HG011</horizongridid>
+			<filename type="char">HorizonFile29.dat</filename>
+			<datadomain type="char">TIME</datadomain>
+			<datasource type="char">TEST3</datasource>
+			<geoname type="char">Horizon1</geoname>
+			<geotype type="char">SURFACE</geotype>
+			<mapdatasetname type="char">test1</mapdatasetname>
+			<unitdesc type="char">ms</unitdesc>
+			<createusername type="char">TEST3</createusername>
+			<createdate type="char">Thu Jun 25 12:01:01 CEST 2009</createdate>
+			<updateusername type="char">TEST3</updateusername>
+			<updatedate type="char">Thu Jun 25 12:01:01 CEST 2009</updatedate>
+			<attribute type="char">Z-VALUE</attribute>
+			<zmax type="double">539.6173095703125</zmax>
+			<zmin type="double">367.5943908691406</zmin>
+		</item>
+		<item type="struct" b2path="IntegrationModules/OWGRIDS_HEIDRUN/Projects/TIME/STRATA/0%3ANORDLAND GP. HD/5%3AKai Fm. HD/GRIDS/Horizon3 32664">
+			<id type="char">HF030</id>
+			<horizonid type="char">Horizon3</horizonid>
+			<horizongridid type="char">HG012</horizongridid>
+			<filename type="char">HorizonFile30.dat</filename>
+			<datadomain type="char">TIME</datadomain>
+			<datasource type="char">TEST4</datasource>
+			<geoname type="char">Horizon3</geoname>
+			<geotype type="char">SURFACE</geotype>
+			<mapdatasetname type="char">test1</mapdatasetname>
+			<unitdesc type="char">ms</unitdesc>
+			<createusername type="char">TEST4</createusername>
+			<createdate type="char">Fri Jun 05 11:58:12 CEST 2009</createdate>
+			<updateusername type="char">TEST4</updateusername>
+			<updatedate type="char">Wed Nov 18 10:17:52 CET 2009</updatedate>
+			<attribute type="char">M-segment-Knut</attribute>
+			<zmax type="double">1888.4228515625</zmax>
+			<zmin type="double">0.0</zmin>
+		</item>
+		<item type="struct" b2path="IntegrationModules/OWGRIDS_HEIDRUN/Projects/TIME/STRATA/0%3ANORDLAND GP. HD/3%3ANaust Fm. HD/GRIDS/Horizon2 32667">
+			<id type="char">HF031</id>
+			<horizonid type="char">Horizon2</horizonid>
+			<horizongridid type="char">HG012</horizongridid>
+			<filename type="char">HorizonFile31.dat</filename>
+			<datadomain type="char">TIME</datadomain>
+			<datasource type="char">TEST4</datasource>
+			<geoname type="char">Horizon2</geoname>
+			<geotype type="char">SURFACE</geotype>
+			<mapdatasetname type="char">test1</mapdatasetname>
+			<unitdesc type="char">ms</unitdesc>
+			<createusername type="char">TEST4</createusername>
+			<createdate type="char">Fri Jun 05 11:59:32 CEST 2009</createdate>
+			<updateusername type="char">TEST4</updateusername>
+			<updatedate type="char">Wed Nov 18 10:17:52 CET 2009</updatedate>
+			<attribute type="char">M-segment-Knut</attribute>
+			<zmax type="double">1505.2037353515625</zmax>
+			<zmin type="double">0.0</zmin>
+		</item>
+	</horizonfiles>
+	<faults>
+		<item type="struct">
+			<id type="char">Fault1</id>
+			<name type="char">Fault1</name>
+		</item>
+		<item type="struct">
+			<id type="char">Fault2</id>
+			<name type="char">Fault2</name>
+		</item>
+		<item type="struct">
+			<id type="char">Fault3</id>
+			<name type="char">Fault3</name>
+		</item>
+	</faults>
+	<faultfiles>
+		<item type="struct" b2path="IntegrationModules/OWFAULTS_HEIDRUN/Projects/sw7000/INTERPRETER/HDFAU/Fault1 3379">
+			<id type="char">FF3379</id>
+			<faultid type="char">Fault1</faultid>
+			<filename type="char">Fault1_3379.fault_data</filename>
+		</item>
+		<item type="struct" b2path="IntegrationModules/OWFAULTS_HEIDRUN/Projects/sw7000/INTERPRETER/HDFAU/Fault2 3369">
+			<id type="char">FF3369</id>
+			<faultid type="char">Fault2</faultid>
+			<filename type="char">Fault2_3369.fault_data</filename>
+		</item>
+		<item type="struct" b2path="IntegrationModules/OWFAULTS_HEIDRUN/Projects/sw7000/INTERPRETER/HDFAU/Fault3 3365">
+			<id type="char">FF3365</id>
+			<faultid type="char">Fault3</faultid>
+			<filename type="char">Fault3_3365.fault_data</filename>
+		</item>
+	</faultfiles>
+	<faultwellpicks>
+		<item type="struct" b2path="IntegrationModules/OWWELLMON_SJ2NORL_HEIDRUN/Projects/6507%2F7-2/Faults/Fault1">
+			<type type="char">fault</type>
+			<id type="char">4;Fault1;STAT;1</id>
+			<wellid type="double">4</wellid>
+			<surfaceid type="char">Fault1</surfaceid>
+			<md type="double">2529.31</md>
+			<tvdssOW type="double">2503.772</tvdssOW>
+			<tvdss type="double">2503.772</tvdss>
+			<tvdssPosLog type="double">2528.7607</tvdssPosLog>
+			<tvd type="double">2528.772</tvd>
+			<covariancenn type="double">14.43479</covariancenn>
+			<covarianceee type="double">14.619018</covarianceee>
+			<covariancevv type="double">4.9751234</covariancevv>
+			<covariancene type="double">-0.04536595</covariancene>
+			<covariancenv type="double">0.13784957</covariancenv>
+			<covarianceev type="double">0.037181187</covarianceev>
+			<inclination type="double">1.7529267</inclination>
+			<azimuth type="double">280.28928</azimuth>
+			<templateid type="char">Template2</templateid>
+			<defsurveyid type="char">Ig0yj</defsurveyid>
+			<branchWellboreName type="char">2</branchWellboreName>
+			<surveysequenceno type="double">0</surveysequenceno>
+			<surfacename type="char">Fault1</surfacename>
+			<interpreter type="char">STAT</interpreter>
+			<observationnumber type="double">1</observationnumber>
+			<easting type="double">421284.58603961795</easting>
+			<northing type="double">7247185.552761747</northing>
+			<createdby type="char">STAT</createdby>
+			<createddate type="char">2010-02-28</createddate>
+			<qualifier type="char"/>
+			<kind type="char"/>
+			<confidence type="char">G</confidence>
+			<updateddate type="char">2010-03-22</updateddate>
+			<remark type="char"/>
+			<nonseismic type="double">0.0</nonseismic>
+			<surveysource type="char">EDM</surveysource>
+			<slotid type="char">Slot2</slotid>
+		</item>
+		<item type="struct" b2path="IntegrationModules/OWWELLMON_SJ2NORL_HEIDRUN/Projects/6507%2F7-6/Faults/Fault1">
+			<type type="char">fault</type>
+			<id type="char">9;Fault1;STAT;1</id>
+			<wellid type="double">9</wellid>
+			<surfaceid type="char">Fault1</surfaceid>
+			<md type="double">2342.02</md>
+			<tvdssOW type="double">2316.7324</tvdssOW>
+			<tvdss type="double">2316.7324</tvdss>
+			<tvdssPosLog type="double">2341.705</tvdssPosLog>
+			<tvd type="double">2341.7324</tvd>
+			<covariancenn type="double">12.051301</covariancenn>
+			<covarianceee type="double">11.994877</covarianceee>
+			<covariancevv type="double">3.9703667</covariancevv>
+			<covariancene type="double">-0.015091913</covariancene>
+			<covariancenv type="double">-0.013658884</covariancenv>
+			<covarianceev type="double">0.09511019</covarianceev>
+			<inclination type="double">2.6734002</inclination>
+			<azimuth type="double">309.10666</azimuth>
+			<templateid type="char">Template4</templateid>
+			<defsurveyid type="char">0rpdp</defsurveyid>
+			<branchWellboreName type="char">6</branchWellboreName>
+			<surveysequenceno type="double">0</surveysequenceno>
+			<surfacename type="char">Fault1</surfacename>
+			<interpreter type="char">STAT</interpreter>
+			<observationnumber type="double">1</observationnumber>
+			<easting type="double">421800.32858917565</easting>
+			<northing type="double">7249622.140809869</northing>
+			<createdby type="char">STAT</createdby>
+			<createddate type="char">2010-02-28</createddate>
+			<qualifier type="char"/>
+			<kind type="char"/>
+			<confidence type="char"/>
+			<updateddate type="char">2010-03-16</updateddate>
+			<remark type="char"/>
+			<nonseismic type="double">0.0</nonseismic>
+			<surveysource type="char">EDM</surveysource>
+			<slotid type="char">Slot4</slotid>
+		</item>
+		<item type="struct" b2path="IntegrationModules/OWWELLMON_SJ2NORL_HEIDRUN/Projects/6507%2F7-A-20/Faults/Fault1">
+			<type type="char">fault</type>
+			<id type="char">205;Fault1;STAT;1</id>
+			<wellid type="double">205</wellid>
+			<surfaceid type="char">Fault1</surfaceid>
+			<md type="double">2800.96</md>
+			<tvdssOW type="double">2449.551</tvdssOW>
+			<tvdss type="double">2449.551</tvdss>
+			<tvdssPosLog type="double">2508.673</tvdssPosLog>
+			<tvd type="double">2523.751</tvd>
+			<covariancenn type="double">65.86126</covariancenn>
+			<covarianceee type="double">23.0086</covarianceee>
+			<covariancevv type="double">6.4898973</covariancevv>
+			<covariancene type="double">30.510912</covariancene>
+			<covariancenv type="double">-0.37651995</covariancenv>
+			<covarianceev type="double">0.763011</covarianceev>
+			<inclination type="double">37.36205</inclination>
+			<azimuth type="double">305.01752</azimuth>
+			<templateid type="char">Template7</templateid>
+			<defsurveyid type="char">oWxuj</defsurveyid>
+			<branchWellboreName type="char">A-20</branchWellboreName>
+			<surveysequenceno type="double">2</surveysequenceno>
+			<surfacename type="char">Fault1</surfacename>
+			<interpreter type="char">STAT</interpreter>
+			<observationnumber type="double">1</observationnumber>
+			<easting type="double">420750.69948859984</easting>
+			<northing type="double">7246475.147132398</northing>
+			<createdby type="char">STAT</createdby>
+			<createddate type="char">2010-02-28</createddate>
+			<qualifier type="char"/>
+			<kind type="char"/>
+			<confidence type="char">G</confidence>
+			<updateddate type="char">2010-03-22</updateddate>
+			<remark type="char"/>
+			<nonseismic type="double">0.0</nonseismic>
+			<surveysource type="char">EDM</surveysource>
+			<slotid type="char">Slot10</slotid>
+		</item>
+	</faultwellpicks>
+	<pickautosyncbanlist>
+	</pickautosyncbanlist>
+	<dataset>
+	    <seabedhorizonid>Seabed</seabedhorizonid>
+	</dataset>
+</root>
