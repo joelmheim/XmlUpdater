@@ -301,9 +301,9 @@
 			<mapdatasetname type="char">test1</mapdatasetname>
 			<unitdesc type="char">ms</unitdesc>
 			<createusername type="char">TEST1</createusername>
-			<createdate type="char">Fri Nov 06 13:04:55 CET 2009</createdate>
+			<createdate type="char">2009-11-06 13:04:55</createdate>
 			<updateusername type="char">Test1</updateusername>
-			<updatedate type="char">Fri Nov 06 13:04:55 CET 2009</updatedate>
+			<updatedate type="char">2009-11-06 13:04:55</updatedate>
 			<attribute type="char">Time</attribute>
 		</item>
 		<item type="struct">
@@ -318,9 +318,9 @@
 			<mapdatasetname type="char">test1</mapdatasetname>
 			<unitdesc type="char">ms</unitdesc>
 			<createusername type="char">TEST1</createusername>
-			<createdate type="char">Fri Nov 06 13:22:06 CET 2009</createdate>
+			<createdate type="char">2009-11-06 13:22:06</createdate>
 			<updateusername type="char">TEST1</updateusername>
-			<updatedate type="char">Fri Nov 06 13:22:06 CET 2009</updatedate>
+			<updatedate type="char">2009-11-06 13:22:06</updatedate>
 			<attribute type="char">Time</attribute>
 		</item>
 		<item type="struct">
@@ -335,9 +335,9 @@
 			<mapdatasetname type="char">test1</mapdatasetname>
 			<unitdesc type="char">ms</unitdesc>
 			<createusername type="char">TEST1</createusername>
-			<createdate type="char">Fri Nov 06 13:03:36 CET 2009</createdate>
+			<createdate type="char">2009-11-06 13:03:36</createdate>
 			<updateusername type="char">TEST1</updateusername>
-			<updatedate type="char">Fri Nov 06 13:03:36 CET 2009</updatedate>
+			<updatedate type="char">2009-11-06 13:03:36</updatedate>
 			<attribute type="char">Time</attribute>
 		</item>
 		<item type="struct">
@@ -352,9 +352,9 @@
 			<mapdatasetname type="char">test1</mapdatasetname>
 			<unitdesc type="char">ms</unitdesc>
 			<createusername type="char">TEST1</createusername>
-			<createdate type="char">Fri Nov 06 13:23:18 CET 2009</createdate>
+			<createdate type="char">2009-11-06 13:23:18</createdate>
 			<updateusername type="char">TEST1</updateusername>
-			<updatedate type="char">Fri Nov 06 13:23:18 CET 2009</updatedate>
+			<updatedate type="char">2009-11-06 13:23:18</updatedate>
 			<attribute type="char">Time</attribute>
 		</item>
 		<item type="struct">
@@ -369,9 +369,9 @@
 			<mapdatasetname type="char">test1</mapdatasetname>
 			<unitdesc type="char">ms</unitdesc>
 			<createusername type="char">TEST1</createusername>
-			<createdate type="char">Mon Nov 09 11:44:36 CET 2009</createdate>
+			<createdate type="char">2009-11-09 11:44:36</createdate>
 			<updateusername type="char">TEST1</updateusername>
-			<updatedate type="char">Mon Nov 09 11:44:36 CET 2009</updatedate>
+			<updatedate type="char">2009-11-09 11:44:36</updatedate>
 			<attribute type="char">Time</attribute>
 		</item>
 		<item type="struct">
@@ -386,9 +386,9 @@
 			<mapdatasetname type="char">test1</mapdatasetname>
 			<unitdesc type="char">ms</unitdesc>
 			<createusername type="char">TEST1</createusername>
-			<createdate type="char">Mon Nov 09 11:45:18 CET 2009</createdate>
+			<createdate type="char">2009-11-09 11:45:18</createdate>
 			<updateusername type="char">TEST1</updateusername>
-			<updatedate type="char">Mon Nov 09 11:45:18 CET 2009</updatedate>
+			<updatedate type="char">2009-11-09 11:45:18</updatedate>
 			<attribute type="char">Time</attribute>
 		</item>
 		<item type="struct">
@@ -403,9 +403,9 @@
 			<mapdatasetname type="char">test2</mapdatasetname>
 			<unitdesc type="char">ms</unitdesc>
 			<createusername type="char">TEST2</createusername>
-			<createdate type="char">Sun Nov 21 10:30:21 CET 2010</createdate>
+			<createdate type="char">2010-11-21 10:30:21</createdate>
 			<updateusername type="char">TEST2</updateusername>
-			<updatedate type="char">Sun Nov 21 10:30:21 CET 2010</updatedate>
+			<updatedate type="char">2010-11-21 10:30:21</updatedate>
 			<attribute type="char">Time</attribute>
 		</item>
 		<item type="struct">
@@ -420,9 +420,9 @@
 			<mapdatasetname type="char">test2</mapdatasetname>
 			<unitdesc type="char">ms</unitdesc>
 			<createusername type="char">TEST2</createusername>
-			<createdate type="char">Sun Nov 21 10:46:10 CET 2010</createdate>
+			<createdate type="char">2010-11-21 10:46:10</createdate>
 			<updateusername type="char">TEST2</updateusername>
-			<updatedate type="char">Sun Nov 21 10:46:10 CET 2010</updatedate>
+			<updatedate type="char">2010-11-21 10:46:10</updatedate>
 			<attribute type="char">Time</attribute>
 		</item>
 		<item type="struct">
@@ -437,9 +437,9 @@
 			<mapdatasetname type="char">test2</mapdatasetname>
 			<unitdesc type="char">ms</unitdesc>
 			<createusername type="char">TEST2</createusername>
-			<createdate type="char">Sun Nov 21 11:04:04 CET 2010</createdate>
+			<createdate type="char">2010-11-21 11:04:04</createdate>
 			<updateusername type="char">TEST2</updateusername>
-			<updatedate type="char">Sun Nov 21 11:04:04 CET 2010</updatedate>
+			<updatedate type="char">2010-11-21 11:04:04</updatedate>
 			<attribute type="char">Time</attribute>
 		</item>
 		<item type="struct">
@@ -454,9 +454,9 @@
 			<mapdatasetname type="char">test1</mapdatasetname>
 			<unitdesc type="char">ms</unitdesc>
 			<createusername type="char">TEST1</createusername>
-			<createdate type="char">Fri Aug 06 14:49:00 CEST 2010</createdate>
+			<createdate type="char">2010-08-06 14:49:00</createdate>
 			<updateusername type="char">TEST1</updateusername>
-			<updatedate type="char">Fri Aug 06 14:49:00 CEST 2010</updatedate>
+			<updatedate type="char">2010-08-06 14:49:00</updatedate>
 			<attribute type="char">Time</attribute>
 		</item>
 		<item type="struct">
@@ -471,9 +471,9 @@
 			<mapdatasetname type="char">test1</mapdatasetname>
 			<unitdesc type="char">ms</unitdesc>
 			<createusername type="char">TEST1</createusername>
-			<createdate type="char">Fri Aug 06 14:49:55 CEST 2010</createdate>
+			<createdate type="char">2010-08-06 14:49:55</createdate>
 			<updateusername type="char">TEST1</updateusername>
-			<updatedate type="char">Fri Aug 06 14:49:55 CEST 2010</updatedate>
+			<updatedate type="char">2010-08-06 14:49:55</updatedate>
 			<attribute type="char">Time</attribute>
 		</item>
 		<item type="struct">
@@ -488,9 +488,9 @@
 			<mapdatasetname type="char">test1</mapdatasetname>
 			<unitdesc type="char">ms</unitdesc>
 			<createusername type="char">TEST1</createusername>
-			<createdate type="char">Mon Nov 09 08:43:26 CET 2009</createdate>
+			<createdate type="char">2009-11-09 08:43:26</createdate>
 			<updateusername type="char">TEST1</updateusername>
-			<updatedate type="char">Mon Nov 09 08:43:26 CET 2009</updatedate>
+			<updatedate type="char">2009-11-09 08:43:26</updatedate>
 			<attribute type="char">Time</attribute>
 		</item>
 		<item type="struct">
@@ -505,9 +505,9 @@
 			<mapdatasetname type="char">test1</mapdatasetname>
 			<unitdesc type="char">ms</unitdesc>
 			<createusername type="char">TEST1</createusername>
-			<createdate type="char">Mon Nov 09 08:44:23 CET 2009</createdate>
+			<createdate type="char">2009-11-09 08:44:23</createdate>
 			<updateusername type="char">TEST1</updateusername>
-			<updatedate type="char">Mon Nov 09 08:44:23 CET 2009</updatedate>
+			<updatedate type="char">2009-11-09 08:44:23</updatedate>
 			<attribute type="char">Time</attribute>
 		</item>
 		<item type="struct">
@@ -522,9 +522,9 @@
 			<mapdatasetname type="char">test1</mapdatasetname>
 			<unitdesc type="char">ms</unitdesc>
 			<createusername type="char">TEST1</createusername>
-			<createdate type="char">Mon Nov 09 14:25:29 CET 2009</createdate>
+			<createdate type="char">2009-11-09 14:25:29</createdate>
 			<updateusername type="char">TEST1</updateusername>
-			<updatedate type="char">Mon Nov 09 14:25:29 CET 2009</updatedate>
+			<updatedate type="char">2009-11-09 14:25:29</updatedate>
 			<attribute type="char">Time</attribute>
 		</item>
 		<item type="struct">
@@ -539,9 +539,9 @@
 			<mapdatasetname type="char">test1</mapdatasetname>
 			<unitdesc type="char">ms</unitdesc>
 			<createusername type="char">TEST1</createusername>
-			<createdate type="char">Mon Nov 09 14:26:26 CET 2009</createdate>
+			<createdate type="char">2009-11-09 14:26:26</createdate>
 			<updateusername type="char">TEST1</updateusername>
-			<updatedate type="char">Mon Nov 09 14:26:26 CET 2009</updatedate>
+			<updatedate type="char">2009-11-09 14:26:26</updatedate>
 			<attribute type="char">Time</attribute>
 		</item>
 		<item type="struct">
@@ -556,9 +556,9 @@
 			<mapdatasetname type="char">test2</mapdatasetname>
 			<unitdesc type="char">ms</unitdesc>
 			<createusername type="char">TEST2</createusername>
-			<createdate type="char">Tue Jan 26 13:00:29 CET 2010</createdate>
+			<createdate type="char">2010-01-26 13:00:29</createdate>
 			<updateusername type="char">TEST2</updateusername>
-			<updatedate type="char">Tue Jan 26 13:00:29 CET 2010</updatedate>
+			<updatedate type="char">2010-01-26 13:00:29</updatedate>
 			<attribute type="char">Time</attribute>
 		</item>
 		<item type="struct">
@@ -573,9 +573,9 @@
 			<mapdatasetname type="char">test2</mapdatasetname>
 			<unitdesc type="char">ms</unitdesc>
 			<createusername type="char">TEST2</createusername>
-			<createdate type="char">Tue Jan 26 13:01:26 CET 2010</createdate>
+			<createdate type="char">2010-01-26 13:01:26</createdate>
 			<updateusername type="char">TEST2</updateusername>
-			<updatedate type="char">Tue Jan 26 13:01:26 CET 2010</updatedate>
+			<updatedate type="char">2010-01-26 13:01:26</updatedate>
 			<attribute type="char">Time</attribute>
 		</item>
 		<item type="struct">
@@ -590,9 +590,9 @@
 			<mapdatasetname type="char">test2</mapdatasetname>
 			<unitdesc type="char">ms</unitdesc>
 			<createusername type="char">TEST2</createusername>
-			<createdate type="char">Tue Jan 26 12:59:17 CET 2010</createdate>
+			<createdate type="char">2010-01-26 12:59:17</createdate>
 			<updateusername type="char">TEST2</updateusername>
-			<updatedate type="char">Tue Jan 26 12:59:17 CET 2010</updatedate>
+			<updatedate type="char">2010-01-26 12:59:17</updatedate>
 			<attribute type="char">Time</attribute>
 		</item>
 		<item type="struct">
@@ -607,9 +607,9 @@
 			<mapdatasetname type="char">test2</mapdatasetname>
 			<unitdesc type="char">ms</unitdesc>
 			<createusername type="char">TEST1</createusername>
-			<createdate type="char">Tue Dec 01 14:20:02 CET 2009</createdate>
+			<createdate type="char">2009-12-01 14:20:02</createdate>
 			<updateusername type="char">TEST1</updateusername>
-			<updatedate type="char">Tue Dec 01 14:20:02 CET 2009</updatedate>
+			<updatedate type="char">2009-12-01 14:20:02</updatedate>
 			<attribute type="char">Time</attribute>
 		</item>
 		<item type="struct">
@@ -624,9 +624,9 @@
 			<mapdatasetname type="char">test2</mapdatasetname>
 			<unitdesc type="char">ms</unitdesc>
 			<createusername type="char">TEST1</createusername>
-			<createdate type="char">Tue Dec 01 14:17:11 CET 2009</createdate>
+			<createdate type="char">2009-12-01 14:17:11</createdate>
 			<updateusername type="char">TEST1</updateusername>
-			<updatedate type="char">Tue Dec 01 14:17:11 CET 2009</updatedate>
+			<updatedate type="char">2009-12-01 14:17:11</updatedate>
 			<attribute type="char">Time</attribute>
 		</item>
 		<item type="struct">
@@ -641,9 +641,9 @@
 			<mapdatasetname type="char">test1</mapdatasetname>
 			<unitdesc type="char">ms</unitdesc>
 			<createusername type="char">TEST1</createusername>
-			<createdate type="char">Wed Aug 18 10:02:23 CEST 2010</createdate>
+			<createdate type="char">2010-08-18 10:02:23</createdate>
 			<updateusername type="char">TEST1</updateusername>
-			<updatedate type="char">Wed Aug 18 10:02:23 CEST 2010</updatedate>
+			<updatedate type="char">2010-08-18 10:02:23</updatedate>
 			<attribute type="char">Time</attribute>
 		</item>
 		<item type="struct">
@@ -658,9 +658,9 @@
 			<mapdatasetname type="char">test1</mapdatasetname>
 			<unitdesc type="char">ms</unitdesc>
 			<createusername type="char">TEST1</createusername>
-			<createdate type="char">Wed Aug 18 10:00:19 CEST 2010</createdate>
+			<createdate type="char">2010-08-18 10:00:19</createdate>
 			<updateusername type="char">TEST1</updateusername>
-			<updatedate type="char">Wed Aug 18 10:00:19 CEST 2010</updatedate>
+			<updatedate type="char">2010-08-18 10:00:19</updatedate>
 			<attribute type="char">Time</attribute>
 		</item>
 		<item type="struct">
@@ -675,9 +675,9 @@
 			<mapdatasetname type="char">test1</mapdatasetname>
 			<unitdesc type="char">ms</unitdesc>
 			<createusername type="char">TEST1</createusername>
-			<createdate type="char">Wed Aug 18 09:57:30 CEST 2010</createdate>
+			<createdate type="char">2010-08-18 09:57:30</createdate>
 			<updateusername type="char">TEST1</updateusername>
-			<updatedate type="char">Wed Aug 18 09:57:30 CEST 2010</updatedate>
+			<updatedate type="char">2010-08-18 09:57:30</updatedate>
 			<attribute type="char">Time</attribute>
 		</item>
 		<item type="struct">
@@ -692,9 +692,9 @@
 			<mapdatasetname type="char">test1</mapdatasetname>
 			<unitdesc type="char">ms</unitdesc>
 			<createusername type="char">TEST1</createusername>
-			<createdate type="char">Tue Apr 27 12:49:36 CEST 2010</createdate>
+			<createdate type="char">2010-04-27 12:49:36</createdate>
 			<updateusername type="char">TEST1</updateusername>
-			<updatedate type="char">Tue Apr 27 12:49:36 CEST 2010</updatedate>
+			<updatedate type="char">2010-04-27 12:49:36</updatedate>
 			<attribute type="char">Time</attribute>
 		</item>
 		<item type="struct">
@@ -709,9 +709,9 @@
 			<mapdatasetname type="char">test1</mapdatasetname>
 			<unitdesc type="char">ms</unitdesc>
 			<createusername type="char">TEST1</createusername>
-			<createdate type="char">Mon Apr 26 15:08:23 CEST 2010</createdate>
+			<createdate type="char">2010-04-26 15:08:23</createdate>
 			<updateusername type="char">TEST1</updateusername>
-			<updatedate type="char">Tue Apr 27 12:48:43 CEST 2010</updatedate>
+			<updatedate type="char">2010-04-27 12:48:43</updatedate>
 			<attribute type="char">Time</attribute>
 		</item>
 		<item type="struct">
@@ -726,9 +726,9 @@
 			<mapdatasetname type="char">test1</mapdatasetname>
 			<unitdesc type="char">ms</unitdesc>
 			<createusername type="char">TEST1</createusername>
-			<createdate type="char">Mon Apr 26 15:06:35 CEST 2010</createdate>
+			<createdate type="char">2010-04-26 15:06:35</createdate>
 			<updateusername type="char">TEST1</updateusername>
-			<updatedate type="char">Tue Apr 27 12:47:51 CEST 2010</updatedate>
+			<updatedate type="char">2010-04-27 12:47:51</updatedate>
 			<attribute type="char">Time</attribute>
 		</item>
 		<item type="struct">
@@ -743,9 +743,9 @@
 			<mapdatasetname type="char">test1</mapdatasetname>
 			<unitdesc type="char">ms</unitdesc>
 			<createusername type="char">TEST3</createusername>
-			<createdate type="char">Thu Jun 25 13:33:22 CEST 2009</createdate>
+			<createdate type="char">2009-06-25 13:33:22</createdate>
 			<updateusername type="char">TEST3</updateusername>
-			<updatedate type="char">Thu Jun 25 13:33:22 CEST 2009</updatedate>
+			<updatedate type="char">2009-06-25 13:33:22</updatedate>
 			<attribute type="char">Z-VALUE</attribute>
 		</item>
 		<item type="struct">
@@ -760,9 +760,9 @@
 			<mapdatasetname type="char">test1</mapdatasetname>
 			<unitdesc type="char">ms</unitdesc>
 			<createusername type="char">TEST3</createusername>
-			<createdate type="char">Thu Jun 25 13:32:44 CEST 2009</createdate>
+			<createdate type="char">2009-06-25 13:32:44</createdate>
 			<updateusername type="char">TEST3</updateusername>
-			<updatedate type="char">Thu Jun 25 13:32:44 CEST 2009</updatedate>
+			<updatedate type="char">2009-06-25 13:32:44</updatedate>
 			<attribute type="char">Z-VALUE</attribute>
 		</item>
 		<item type="struct">
@@ -777,9 +777,9 @@
 			<mapdatasetname type="char">test1</mapdatasetname>
 			<unitdesc type="char">ms</unitdesc>
 			<createusername type="char">TEST3</createusername>
-			<createdate type="char">Thu Jun 25 12:01:01 CEST 2009</createdate>
+			<createdate type="char">2009-06-25 12:01:01</createdate>
 			<updateusername type="char">TEST3</updateusername>
-			<updatedate type="char">Thu Jun 25 12:01:01 CEST 2009</updatedate>
+			<updatedate type="char">2009-06-25 12:01:01</updatedate>
 			<attribute type="char">Z-VALUE</attribute>
 		</item>
 		<item type="struct">
@@ -794,9 +794,9 @@
 			<mapdatasetname type="char">test1</mapdatasetname>
 			<unitdesc type="char">ms</unitdesc>
 			<createusername type="char">TEST4</createusername>
-			<createdate type="char">Fri Jun 05 11:58:12 CEST 2009</createdate>
+			<createdate type="char">2009-06-05 11:58:12</createdate>
 			<updateusername type="char">TEST4</updateusername>
-			<updatedate type="char">Wed Nov 18 10:17:52 CET 2009</updatedate>
+			<updatedate type="char">2009-11-18 10:17:52</updatedate>
 			<attribute type="char">M-segment-Knut</attribute>
 		</item>
 		<item type="struct">
@@ -811,9 +811,9 @@
 			<mapdatasetname type="char">test1</mapdatasetname>
 			<unitdesc type="char">ms</unitdesc>
 			<createusername type="char">TEST4</createusername>
-			<createdate type="char">Fri Jun 05 11:59:32 CEST 2009</createdate>
+			<createdate type="char">2009-06-05 11:59:32</createdate>
 			<updateusername type="char">TEST4</updateusername>
-			<updatedate type="char">Wed Nov 18 10:17:52 CET 2009</updatedate>
+			<updatedate type="char">2009-11-18 10:17:52</updatedate>
 			<attribute type="char">M-segment-Knut</attribute>
 		</item>
 	</horizonfiles>
