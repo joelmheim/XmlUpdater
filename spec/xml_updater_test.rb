@@ -47,7 +47,7 @@ class XmlUpdaterTest < Test::Unit::TestCase
 </root>"
     xml_updater = XmlUpdater.new actual_xml
     xml_updater.update_date_format('//dates/item/date', '%Y-%m-%d %H:%M:%S')
-    assert_equal(expected_xml, xml_updater.xml_document.to_xml)
+    assert_equal(expected_xml, xml_updater.to_xml)
   end
   
   def test_update_content_with_counter
@@ -81,7 +81,7 @@ class XmlUpdaterTest < Test::Unit::TestCase
 </root>"
     xml_updater = XmlUpdater.new actual_xml
     xml_updater.update_content_with_counter('//names/item/name', 'Test')
-    assert_equal(expected_xml, xml_updater.xml_document.to_xml)
+    assert_equal(expected_xml, xml_updater.to_xml)
   end
   
   def test_remove_attribute
@@ -115,8 +115,77 @@ class XmlUpdaterTest < Test::Unit::TestCase
 </root>"
     xml_updater = XmlUpdater.new actual_xml
     xml_updater.remove_attribute('//names/item/name', 'id')
-    assert_equal(expected_xml, xml_updater.xml_document.to_xml)
+    assert_equal(expected_xml, xml_updater.to_xml)
   end
   
+  def test_update_content
+    expected_xml = "<?xml version=\"1.0\"?>
+<root>
+  <names>
+    <item>
+      <value>999</value>
+    </item>
+    <item>
+      <value>999</value>
+    </item>
+    <item>
+      <value>999</value>
+    </item>
+  </names>
+</root>\n"
+    actual_xml = "<?xml version=\"1.0\"?>
+<root>
+  <names>
+    <item>
+      <value>123</value>
+    </item>
+    <item>
+      <value>213</value>
+    </item>
+    <item>
+      <value>312</value>
+    </item>
+  </names>
+</root>"
+    xml_updater = XmlUpdater.new actual_xml
+    xml_updater.update_content('//names/item/value', '999')
+    assert_equal(expected_xml, xml_updater.to_xml)
+  end
   
+  def test_remove_element
+    expected_xml = "<?xml version=\"1.0\"?>
+<root>
+  <names>
+    <item>
+      <value>999</value>
+    </item>
+    <item>
+      <value>999</value>
+    </item>
+    <item>
+      <value>999</value>
+    </item>
+  </names>
+</root>\n"
+    actual_xml = "<?xml version=\"1.0\"?>
+<root>
+  <names>
+    <item>
+      <name>Test1</name>
+      <value>999</value>
+    </item>
+    <item>
+      <name>Test2</name>
+      <value>999</value>
+    </item>
+    <item>
+      <name>Test3</name>
+      <value>999</value>
+    </item>
+  </names>
+</root>"
+    xml_updater = XmlUpdater.new actual_xml
+    xml_updater.remove_element('//names/item/name')
+    assert_equal(expected_xml, xml_updater.to_xml)
+  end
 end
