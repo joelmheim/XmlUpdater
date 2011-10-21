@@ -1,6 +1,7 @@
 require 'rubygems'
 require 'nokogiri'
 require 'fileutils'
+require 'date'
 
 class XmlUpdater
   attr_accessor :xml_document
