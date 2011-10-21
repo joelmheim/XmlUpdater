@@ -67,11 +67,13 @@ class XmlUpdater
 
 private 
   def parse_xml(string_or_xml_file)
-    File.open(string_or_xml_file) do |f|
-      @xml_file = string_or_xml_file
-      @xml_document = Nokogiri::XML(f)
-    end
-    rescue Exception 
+    if File.exists?(string_or_xml_file)
+      File.open(string_or_xml_file) do |f|
+        @xml_file = string_or_xml_file
+        @xml_document = Nokogiri::XML(f)
+      end
+    else
       @xml_document = Nokogiri::XML(string_or_xml_file)  
+    end
   end
 end
