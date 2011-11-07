@@ -17,8 +17,10 @@ class XmlUpdater
   def update_date_format(xpath, new_format)
     elements = @xml_document.xpath(xpath)
     elements.each do |element|
-      element_date = DateTime.parse element.content
-      element.content = element_date.strftime(new_format)
+      unless element.content.empty?
+        element_date = DateTime.parse element.content
+        element.content = element_date.strftime(new_format)
+      end
     end
   end
   

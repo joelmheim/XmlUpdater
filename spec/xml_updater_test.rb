@@ -84,6 +84,40 @@ class XmlUpdaterTest < Test::Unit::TestCase
     assert_equal(expected_xml, xml_updater.to_xml)
   end
   
+  def test_update_date_format_with_empty_date_elements
+    expected_xml = "<?xml version=\"1.0\"?>
+<root>
+  <dates>
+    <item>
+      <date/>
+    </item>
+    <item>
+      <date>2009-11-06 13:04:55</date>
+    </item>
+    <item>
+      <date/>
+    </item>
+  </dates>
+</root>\n"
+    actual_xml = "<?xml version=\"1.0\"?>
+<root>
+  <dates>
+    <item>
+      <date/>
+    </item>
+    <item>
+      <date>Fri Nov 06 13:04:55 CET 2009</date>
+    </item>
+    <item>
+      <date/>
+    </item>
+  </dates>
+</root>"
+    xml_updater = XmlUpdater.new actual_xml
+    xml_updater.update_date_format('//dates/item/date', '%Y-%m-%d %H:%M:%S')
+    assert_equal(expected_xml, xml_updater.to_xml)
+  end
+  
   def test_update_content_with_counter
     expected_xml = "<?xml version=\"1.0\"?>
 <root>
