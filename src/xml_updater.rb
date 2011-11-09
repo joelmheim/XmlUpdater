@@ -60,6 +60,7 @@ class XmlUpdater
     new_node = Nokogiri::XML::Node.new(new_element_name, @xml_document)
     new_node.content = new_element_value
     @xml_document.root.add_child(new_node)
+    #Comment that should be removed
   end
 
   def remove_element(xpath)
