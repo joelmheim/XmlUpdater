@@ -1,5 +1,6 @@
 require "test/unit"
 require "xml_updater"
+
 class XmlUpdaterTest < Test::Unit::TestCase
   def test_parse_xml_file
     xml_updater = XmlUpdater.new 'spec/test.xml'
@@ -217,6 +218,43 @@ class XmlUpdaterTest < Test::Unit::TestCase
 </root>"
     xml_updater = XmlUpdater.new actual_xml
     xml_updater.update_content('//names/item/value', '999')
+    assert_equal(expected_xml, xml_updater.to_xml)
+  end
+  
+  def test_add_element
+    expected_xml = "<?xml version=\"1.0\"?>
+<root>
+  <names>
+    <item>
+      <name>Test1</name>
+      <value>999</value>
+    </item>
+    <item>
+      <name>Test2</name>
+      <value>999</value>
+    </item>
+    <item>
+      <name>Test3</name>
+      <value>999</value>
+    </item>
+  </names>
+</root>\n"
+    actual_xml = "<?xml version=\"1.0\"?>
+<root>
+  <names>
+    <item>
+      <name>Test1</name>
+    </item>
+    <item>
+      <name>Test2</name>
+    </item>
+    <item>
+      <name>Test3</name>
+    </item>
+  </names>
+</root>"
+    xml_updater = XmlUpdater.new actual_xml
+    xml_updater.add_child_element('//names/item', 'value', '999')
     assert_equal(expected_xml, xml_updater.to_xml)
   end
   
