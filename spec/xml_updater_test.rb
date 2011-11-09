@@ -257,7 +257,23 @@ class XmlUpdaterTest < Test::Unit::TestCase
     xml_updater.add_child_element('//names/item', 'value', '999')
     assert_equal(expected_xml, xml_updater.to_xml)
   end
-  
+
+  def test_add_element_to_root_with_child
+    expected_xml = "<?xml version=\"1.0\"?>
+<root>
+  <test/>
+  <foo><bar>1</bar></foo>
+</root>\n"
+    actual_xml = "<?xml version=\"1.0\"?>
+<root>
+  <test/>
+</root>"
+    xml_updater = XmlUpdater.new actual_xml
+    xml_updater.add_child_element('//root', 'foo', '')
+    xml_updater.add_child_element('//foo', 'bar', 1)
+    assert_equal(expected_xml, xml_updater.to_xml)
+  end
+
   def test_remove_element
     expected_xml = "<?xml version=\"1.0\"?>
 <root>

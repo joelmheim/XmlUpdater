@@ -50,7 +50,7 @@ class XmlUpdater
   def add_child_element(xpath, new_element_name, new_element_value)
     elements = @xml_document.xpath(xpath)
     elements.each do |element|
-      new_node = Nokogiri::XML::Node.new(new_element_name, @xml_document)
+      new_node = Nokogiri::XML::Node.new(new_element_name, element)
       new_node.content = new_element_value
       element.add_child(new_node)
     end
@@ -81,10 +81,10 @@ private
     if File.exists?(string_or_xml_file)
       File.open(string_or_xml_file) do |f|
         @xml_file = string_or_xml_file
-        @xml_document = Nokogiri::XML(f)
+        @xml_document = Nokogiri::XML(f) { |x| x.noblanks }
       end
     else
-      @xml_document = Nokogiri::XML(string_or_xml_file)  
+      @xml_document = Nokogiri::XML(string_or_xml_file) { |x| x.noblanks }
     end
   end
 end
