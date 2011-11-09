@@ -269,7 +269,7 @@ class XmlUpdaterTest < Test::Unit::TestCase
   <test/>
 </root>"
     xml_updater = XmlUpdater.new actual_xml
-    xml_updater.add_child_element('//root', 'foo', '')
+    xml_updater.add_element_to_root('foo', '')
     xml_updater.add_child_element('//foo', 'bar', 1)
     assert_equal(expected_xml, xml_updater.to_xml)
   end
