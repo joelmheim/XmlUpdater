@@ -258,6 +258,83 @@ class XmlUpdaterTest < Test::Unit::TestCase
     assert_equal(expected_xml, xml_updater.to_xml)
   end
 
+  def test_add_element_with_type
+    expected_xml = "<?xml version=\"1.0\"?>
+<root>
+  <names>
+    <item>
+      <name>Test1</name>
+      <value type=\"double\">999</value>
+    </item>
+    <item>
+      <name>Test2</name>
+      <value type=\"double\">999</value>
+    </item>
+    <item>
+      <name>Test3</name>
+      <value type=\"double\">999</value>
+    </item>
+  </names>
+</root>\n"
+    actual_xml = "<?xml version=\"1.0\"?>
+<root>
+  <names>
+    <item>
+      <name>Test1</name>
+    </item>
+    <item>
+      <name>Test2</name>
+    </item>
+    <item>
+      <name>Test3</name>
+    </item>
+  </names>
+</root>"
+    xml_updater = XmlUpdater.new actual_xml
+    xml_updater.add_child_element('//names/item', 'value', '999', 'double')
+    assert_equal(expected_xml, xml_updater.to_xml)
+  end
+
+  def test_add_element_when_existing
+    expected_xml = "<?xml version=\"1.0\"?>
+<root>
+  <names>
+    <item>
+      <name>Test1</name>
+      <value>999</value>
+    </item>
+    <item>
+      <name>Test2</name>
+      <value>999</value>
+    </item>
+    <item>
+      <name>Test3</name>
+      <value>999</value>
+    </item>
+  </names>
+</root>\n"
+    actual_xml = "<?xml version=\"1.0\"?>
+<root>
+  <names>
+    <item>
+      <name>Test1</name>
+      <value>999</value>
+    </item>
+    <item>
+      <name>Test2</name>
+      <value>999</value>
+    </item>
+    <item>
+      <name>Test3</name>
+      <value>999</value>
+    </item>
+  </names>
+</root>"
+    xml_updater = XmlUpdater.new actual_xml
+    xml_updater.add_child_element('//names/item', 'value', '999')
+    assert_equal(expected_xml, xml_updater.to_xml)
+  end
+
   def test_add_element_to_root_with_child
     expected_xml = "<?xml version=\"1.0\"?>
 <root>
@@ -269,8 +346,54 @@ class XmlUpdaterTest < Test::Unit::TestCase
   <test/>
 </root>"
     xml_updater = XmlUpdater.new actual_xml
-    xml_updater.add_element_to_root('foo', '')
+    xml_updater.add_element_to_root('foo')
     xml_updater.add_child_element('//foo', 'bar', 1)
+    assert_equal(expected_xml, xml_updater.to_xml)
+  end
+
+  def test_add_element_to_root_where_exists
+    expected_xml = "<?xml version=\"1.0\"?>
+<root>
+  <test/>
+  <foo>
+    <bar>1</bar>
+  </foo>
+</root>\n"
+    actual_xml = "<?xml version=\"1.0\"?>
+<root>
+  <test/>
+  <foo>
+    <bar>1</bar>
+  </foo>
+</root>"
+    xml_updater = XmlUpdater.new actual_xml
+    xml_updater.add_element_to_root('foo')
+    xml_updater.add_child_element('//foo', 'bar', 1)
+    assert_equal(expected_xml, xml_updater.to_xml)
+  end
+
+  def test_add_element_to_root_where_another_root_element_has_same_child
+    expected_xml = "<?xml version=\"1.0\"?>
+<root>
+  <test>
+    <foo>0</foo>
+  </test>
+  <foo>
+    <bar>1</bar>
+  </foo>
+</root>\n"
+    actual_xml = "<?xml version=\"1.0\"?>
+<root>
+  <test>
+    <foo>0</foo>
+  </test>
+    <foo>
+    <bar>1</bar>
+  </foo>
+</root>"
+    xml_updater = XmlUpdater.new actual_xml
+    xml_updater.add_element_to_root('foo')
+    xml_updater.add_child_element('//foo[not(/*/foo)]', 'bar', 1)
     assert_equal(expected_xml, xml_updater.to_xml)
   end
 

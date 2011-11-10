@@ -47,19 +47,20 @@ class XmlUpdater
     end
   end
 
-  def add_child_element(xpath, new_element_name, new_element_value)
+  def add_child_element(xpath, new_element_name, new_element_value='', new_element_type=nil)
     elements = @xml_document.xpath(xpath)
     elements.each do |element|
       new_node = Nokogiri::XML::Node.new(new_element_name, element)
       new_node.content = new_element_value
-      element.add_child(new_node)
+      new_node['type'] = new_element_type unless new_element_type.nil?
+      element.add_child(new_node) if element.at(new_element_name).nil?
     end
   end
 
-  def add_element_to_root(new_element_name, new_element_value)
+  def add_element_to_root(new_element_name, new_element_value='')
     new_node = Nokogiri::XML::Node.new(new_element_name, @xml_document)
     new_node.content = new_element_value
-    @xml_document.root.add_child(new_node)
+    @xml_document.root.add_child(new_node) if @xml_document.root.at(new_element_name).nil?
   end
 
   def remove_element(xpath)
