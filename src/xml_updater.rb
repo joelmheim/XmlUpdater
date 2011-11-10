@@ -60,7 +60,7 @@ class XmlUpdater
   def add_element_to_root(new_element_name, new_element_value='')
     new_node = Nokogiri::XML::Node.new(new_element_name, @xml_document)
     new_node.content = new_element_value
-    @xml_document.root.add_child(new_node) if @xml_document.root.at(new_element_name).nil?
+    @xml_document.root.add_child(new_node) unless @xml_document.root.at("/#{@xml_document.root.name}/#{new_element_name}")
   end
 
   def remove_element(xpath)
