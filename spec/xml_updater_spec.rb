@@ -2,7 +2,7 @@ require "xml_updater"
 
 RSpec.describe XmlUpdater, '#parse' do
   context "with xml file" do
-    it "parses test xml file"
+    it "parses test xml file" do
       xml_updater = XmlUpdater.new 'spec/test.xml'
       expect(xml_updater.xml_document.name).to eq 'document'
     end
@@ -20,109 +20,117 @@ RSpec.describe XmlUpdater, '#parse' do
      end
   end
 
+  context "with dates xml" do
+    it "updates date format" do
+      expected_xml = "<?xml version=\"1.0\"?>
+<root>
+  <dates>
+    <item>
+      <date>2010-11-01 00:00:00</date>
+    </item>
+    <item>
+      <date>2010-11-01 00:00:00</date>
+    </item>
+    <item>
+      <date>2010-11-01 00:00:00</date>
+    </item>
+  </dates>
+</root>\n"
+      actual_xml = "<?xml version=\"1.0\"?>
+  <root>
+    <dates>
+      <item>
+        <date>2010-11-01</date>
+      </item>
+      <item>
+        <date>2010-11-01</date>
+      </item>
+      <item>
+        <date>2010-11-01</date>
+      </item>
+    </dates>
+  </root>"
+      xml_updater = XmlUpdater.new actual_xml
+      xml_updater.update_date_format('//dates/item/date', '%Y-%m-%d %H:%M:%S')
+      expect(xml_updater.to_xml).to eq expected_xml
+    end
+
+    it "updates date format with time" do
+      expected_xml = "<?xml version=\"1.0\"?>
+<root>
+  <dates>
+    <item>
+      <date>2009-11-06 22:05:55</date>
+    </item>
+    <item>
+      <date>2009-11-06 13:04:55</date>
+    </item>
+    <item>
+      <date>2009-11-06 11:04:55</date>
+    </item>
+  </dates>
+</root>\n"
+      actual_xml = "<?xml version=\"1.0\"?>
+        <root>
+          <dates>
+            <item>
+              <date>Fri Nov 06 22:05:55 CET 2009</date>
+            </item>
+            <item>
+              <date>Fri Nov 06 13:04:55 CET 2009</date>
+            </item>
+            <item>
+              <date>Fri Nov 06 11:04:55 CET 2009</date>
+            </item>
+          </dates>
+        </root>"
+      xml_updater = XmlUpdater.new actual_xml
+      xml_updater.update_date_format('//dates/item/date', '%Y-%m-%d %H:%M:%S')
+      expect(xml_updater.to_xml).to eq expected_xml
+    end
+
+    it "updates date format with empty date elements" do
+      expected_xml = "<?xml version=\"1.0\"?>
+<root>
+  <dates>
+    <item>
+      <date/>
+    </item>
+    <item>
+      <date>2009-11-06 13:04:55</date>
+    </item>
+    <item>
+      <date/>
+    </item>
+  </dates>
+</root>\n"
+      actual_xml = "<?xml version=\"1.0\"?>
+        <root>
+          <dates>
+            <item>
+              <date/>
+            </item>
+            <item>
+              <date>Fri Nov 06 13:04:55 CET 2009</date>
+            </item>
+            <item>
+              <date/>
+            </item>
+          </dates>
+        </root>"
+      xml_updater = XmlUpdater.new actual_xml
+      xml_updater.update_date_format('//dates/item/date', '%Y-%m-%d %H:%M:%S')
+      expect(xml_updater.to_xml).to eq expected_xml
+    end
+  end
+
+  #end
 
 
-#   def test_update_date_format
-#     expected_xml = "<?xml version=\"1.0\"?>
-# <root>
-#   <dates>
-#     <item>
-#       <date>2010-11-01 00:00:00</date>
-#     </item>
-#     <item>
-#       <date>2010-11-01 00:00:00</date>
-#     </item>
-#     <item>
-#       <date>2010-11-01 00:00:00</date>
-#     </item>
-#   </dates>
-# </root>\n"
-#     actual_xml = "<?xml version=\"1.0\"?>
-# <root>
-#   <dates>
-#     <item>
-#       <date>2010-11-01</date>
-#     </item>
-#     <item>
-#       <date>2010-11-01</date>
-#     </item>
-#     <item>
-#       <date>2010-11-01</date>
-#     </item>
-#   </dates>
-# </root>"
-#     xml_updater = XmlUpdater.new actual_xml
-#     xml_updater.update_date_format('//dates/item/date', '%Y-%m-%d %H:%M:%S')
-#     assert_equal(expected_xml, xml_updater.to_xml)
-#   end
-#
-#   def test_update_date_format_with_time
-#     expected_xml = "<?xml version=\"1.0\"?>
-# <root>
-#   <dates>
-#     <item>
-#       <date>2009-11-06 22:05:55</date>
-#     </item>
-#     <item>
-#       <date>2009-11-06 13:04:55</date>
-#     </item>
-#     <item>
-#       <date>2009-11-06 11:04:55</date>
-#     </item>
-#   </dates>
-# </root>\n"
-#     actual_xml = "<?xml version=\"1.0\"?>
-# <root>
-#   <dates>
-#     <item>
-#       <date>Fri Nov 06 22:05:55 CET 2009</date>
-#     </item>
-#     <item>
-#       <date>Fri Nov 06 13:04:55 CET 2009</date>
-#     </item>
-#     <item>
-#       <date>Fri Nov 06 11:04:55 CET 2009</date>
-#     </item>
-#   </dates>
-# </root>"
-#     xml_updater = XmlUpdater.new actual_xml
-#     xml_updater.update_date_format('//dates/item/date', '%Y-%m-%d %H:%M:%S')
-#     assert_equal(expected_xml, xml_updater.to_xml)
-#   end
-#
-#   def test_update_date_format_with_empty_date_elements
-#     expected_xml = "<?xml version=\"1.0\"?>
-# <root>
-#   <dates>
-#     <item>
-#       <date/>
-#     </item>
-#     <item>
-#       <date>2009-11-06 13:04:55</date>
-#     </item>
-#     <item>
-#       <date/>
-#     </item>
-#   </dates>
-# </root>\n"
-#     actual_xml = "<?xml version=\"1.0\"?>
-# <root>
-#   <dates>
-#     <item>
-#       <date/>
-#     </item>
-#     <item>
-#       <date>Fri Nov 06 13:04:55 CET 2009</date>
-#     </item>
-#     <item>
-#       <date/>
-#     </item>
-#   </dates>
-# </root>"
-#     xml_updater = XmlUpdater.new actual_xml
-#     xml_updater.update_date_format('//dates/item/date', '%Y-%m-%d %H:%M:%S')
-#     assert_equal(expected_xml, xml_updater.to_xml)
-#   end
+end
+
+
+
 #
 #   def test_update_content_with_counter
 #     expected_xml = "<?xml version=\"1.0\"?>
